@@ -1,4 +1,7 @@
 ---
+<p align="center">
+  <img src="header.jpeg" width="100%" />
+</p>
 
 ## 🌊 About Me
 Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan fokus pada **infrastruktur air 💧**, analisis hidrolika, dan manajemen proyek konstruksi. Berpengalaman dalam monitoring jaringan distribusi air, analisis tekanan, serta evaluasi sistem perpipaan.
