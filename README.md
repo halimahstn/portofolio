@@ -5,29 +5,29 @@
 <h1 align="center">👷‍♀️ Siti Nur Halimah</h1>
 
 <p align="center">
-💧 Water Infrastructure | 🏗️ Project Management | 🏢 Construction
+💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi
 </p>
 
 <p align="center">
-<b>Civil Engineering Student</b>
+<b>Mahasiswa Teknik Sipil</b>
 </p>
 
 ---
 
-## 🌊 About Me
-Final-year Civil Engineering student with hands-on experience in **water distribution systems and infrastructure projects**.  
+## 🌊 Tentang Saya
+Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam **sistem distribusi air dan proyek infrastruktur**.  
 
 Memiliki fokus pada **infrastruktur air 💧, analisis hidrolika, dan manajemen proyek konstruksi**, dengan pengalaman dalam **analisis tekanan & debit, deteksi kebocoran, serta optimasi jaringan distribusi air berbasis data**.  
 
 Selain itu, berpengalaman dalam **quality control konstruksi, estimasi volume pekerjaan, dan koordinasi proyek lapangan**.  
-Terbiasa bekerja secara **analitis, detail-oriented, dan kolaboratif dalam tim proyek**.
+Terbiasa bekerja secara **analitis, teliti, dan kolaboratif dalam tim proyek**.
 
 ---
 
-## 🎓 Education
+## 🎓 Pendidikan
 **Institut Teknologi Sepuluh Nopember (ITS)**  
 D4 Teknologi Rekayasa Konstruksi Bangunan Air  
-2022 – Present  
+2022 – Sekarang  
 
 **SMK Negeri 26 Jakarta**  
 Konstruksi Gedung, Sanitasi, dan Perawatan  
@@ -35,22 +35,22 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 
 ---
 
-## 🚀 Portfolio & CV
+## 🚀 Portofolio & CV
 <p align="center">
 <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm">
-  <img src="https://img.shields.io/badge/View%20Portfolio%20%26%20CV-00C853?style=for-the-badge&logo=google-drive&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Lihat%20Portofolio%20%26%20CV-00C853?style=for-the-badge&logo=google-drive&logoColor=white"/>
 </a>
 </p>
 
 ---
 
-## 💼 Internship Experience
+## 💼 Pengalaman Magang
 
 ### 💧 PAM JAYA – Water Distribution Internship
 - Monitoring dan analisis **tekanan & debit jaringan distribusi air berbasis data real-time**  
 - Identifikasi **kebocoran & permasalahan tekanan rendah**  
 - Analisis jaringan menggunakan **ArcGIS dan evaluasi sistem distribusi**  
-- Mendukung operasional jaringan: flushing & valve checking  
+- Mendukung operasional jaringan: flushing & pengecekan valve  
 
 ### 🏗️ PT Wijaya Karya Bangunan Gedung (WIKA)
 - Quality control pekerjaan arsitektur & finishing  
@@ -59,26 +59,26 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Keahlian Teknis
 <p align="center">
 <img src="https://img.shields.io/badge/ArcGIS-2C7AC3?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/AutoCAD-E51050?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/SketchUp-005F9E?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge"/>
 </p>
 
 ---
 
-## 🧠 Strengths
+## 🧠 Kelebihan
 - Problem Solving  
-- Analytical Thinking  
-- Team Collaboration  
-- Communication  
-- Time Management  
+- Berpikir Analitis  
+- Kerja Sama Tim  
+- Komunikasi  
+- Manajemen Waktu  
 
 ---
 
-## 🚧 Featured Projects
+## 🚧 Proyek Unggulan
 
 ### 💧 Rehabilitasi Irigasi Tarum Utara Barat
 <p align="center">
@@ -104,7 +104,7 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 
 ---
 
-## 🌐 Connect with Me
+## 🌐 Hubungi Saya
 <p align="center">
 <a href="https://instagram.com/halimahstn"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
 <a href="https://linkedin.com/in/sitinurhalimaah"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
@@ -113,5 +113,5 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 
 ---
 
-## 📫 Contact
+## 📫 Kontak
 📧 Email: **snhalimaah@gmail.com**  
