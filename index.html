@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Siti Nur Halimah Portfolio</title>
+  <title>Siti Nur Halimah | Portfolio</title>
 
   <style>
     html { scroll-behavior: smooth; }
@@ -16,24 +16,46 @@
     nav {
       position: fixed;
       width: 100%;
-      background: rgba(0,0,0,0.5);
-      padding: 10px;
+      background: rgba(0,0,0,0.6);
+      padding: 12px;
       text-align: center;
       backdrop-filter: blur(10px);
+      z-index: 1000;
     }
 
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     nav a:hover { color: #00e5ff; }
 
     header {
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 110px 20px 60px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      opacity: 0.8;
+      margin: 10px 0 20px;
+    }
+
+    .social a {
+      margin: 5px;
+      display: inline-block;
+      padding: 8px 14px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
     }
 
     .container {
@@ -71,16 +93,6 @@
 
     .btn:hover { background: white; }
 
-    .social a {
-      margin: 10px;
-      display: inline-block;
-      padding: 10px 15px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 8px;
-      text-decoration: none;
-      color: white;
-    }
-
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -92,6 +104,12 @@
       height: 180px;
       object-fit: cover;
       border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.6;
     }
 
   </style>
@@ -111,9 +129,9 @@
   <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
 
   <div class="social">
-    <a href="https://linkedin.com/in/sitinurhalimaah" target="_blank">🔗 LinkedIn</a>
-    <a href="https://instagram.com/halimahstn" target="_blank">📸 Instagram</a>
-    <a href="mailto:snhalimaah@gmail.com">📧 Email</a>
+    <a href="https://linkedin.com/in/sitinurhalimaah" target="_blank">LinkedIn</a>
+    <a href="https://instagram.com/halimahstn" target="_blank">Instagram</a>
+    <a href="mailto:snhalimaah@gmail.com">Email</a>
   </div>
 </header>
 
@@ -122,12 +140,12 @@
   <div class="card" id="about">
     <h2>Tentang Saya</h2>
     <p>
-      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam sistem distribusi air dan proyek infrastruktur. 
-      Memiliki fokus pada infrastruktur air, analisis hidrolika, dan manajemen proyek konstruksi. 
+      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam sistem distribusi air dan proyek infrastruktur.
+      Berfokus pada analisis hidrolika, tekanan, dan optimasi jaringan air.
     </p>
     <p>
-      Berpengalaman dalam analisis tekanan dan debit, deteksi kebocoran, serta optimasi jaringan distribusi air berbasis data. 
-      Selain itu, memiliki pengalaman dalam quality control konstruksi, estimasi volume pekerjaan, serta koordinasi proyek di lapangan.
+      Memiliki pengalaman dalam deteksi kebocoran, analisis debit, serta evaluasi sistem distribusi berbasis data.
+      Juga berpengalaman dalam quality control konstruksi, estimasi volume pekerjaan, dan koordinasi proyek di lapangan.
     </p>
   </div>
 
@@ -141,19 +159,19 @@
   <div class="card" id="experience">
     <h2>Pengalaman Magang</h2>
 
-    <b>PAM JAYA – Water Distribution</b>
+    <b>PAM JAYA</b>
     <ul>
-      <li>Monitoring dan analisis tekanan & debit jaringan distribusi air</li>
-      <li>Identifikasi kebocoran dan tekanan rendah</li>
-      <li>Analisis jaringan menggunakan ArcGIS</li>
+      <li>Analisis tekanan & debit jaringan distribusi air</li>
+      <li>Deteksi kebocoran dan tekanan rendah</li>
+      <li>Pengolahan data menggunakan ArcGIS</li>
       <li>Flushing dan pengecekan valve</li>
     </ul>
 
     <b>PT WIKA Gedung</b>
     <ul>
-      <li>Quality control pekerjaan arsitektur</li>
+      <li>Quality control pekerjaan konstruksi</li>
       <li>Perhitungan volume pekerjaan</li>
-      <li>Laporan mingguan proyek</li>
+      <li>Penyusunan laporan proyek</li>
     </ul>
   </div>
 
@@ -185,6 +203,10 @@
   </div>
 
 </div>
+
+<footer>
+  © 2026 Siti Nur Halimah
+</footer>
 
 </body>
 </html>
