@@ -4,6 +4,10 @@
   <title>Siti Nur Halimah Portfolio</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -11,18 +15,36 @@
       color: white;
     }
 
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.5);
+      padding: 10px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
     header {
       text-align: center;
-      padding: 60px 20px;
+      padding: 100px 20px 60px;
     }
 
     header h1 {
       margin: 0;
       font-size: 40px;
-    }
-
-    header p {
-      opacity: 0.8;
     }
 
     .container {
@@ -37,6 +59,11 @@
       margin-bottom: 25px;
       border-radius: 12px;
       backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     h2 {
@@ -52,6 +79,11 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
     }
 
     .project-grid {
@@ -72,6 +104,14 @@
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+  <a href="#about">Tentang</a>
+  <a href="#experience">Pengalaman</a>
+  <a href="#project">Proyek</a>
+  <a href="#contact">Kontak</a>
+</nav>
+
 <header>
   <h1>Siti Nur Halimah</h1>
   <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
@@ -79,7 +119,7 @@
 
 <div class="container">
 
-  <div class="card">
+  <div class="card" id="about">
     <h2>Tentang Saya</h2>
     <p>
       Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam sistem distribusi air dan proyek konstruksi. 
@@ -94,7 +134,7 @@
     </a>
   </div>
 
-  <div class="card">
+  <div class="card" id="experience">
     <h2>Pengalaman Magang</h2>
 
     <b>PAM JAYA</b>
@@ -111,7 +151,7 @@
     </ul>
   </div>
 
-  <div class="card">
+  <div class="card" id="project">
     <h2>Proyek</h2>
 
     <div class="project-grid">
@@ -131,6 +171,11 @@
       </div>
     </div>
 
+  </div>
+
+  <div class="card" id="contact">
+    <h2>Kontak</h2>
+    <p>Email: snhalimaah@gmail.com</p>
   </div>
 
 </div>
