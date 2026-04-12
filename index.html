@@ -36,6 +36,35 @@
 
     /* HEADER IMAGE (FIX NO CROP) */
     .header-bg {
+      .profile-section {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: -80px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  opacity: 0.85;
+}
+
+.profile-info .desc {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.social a {
+  margin-right: 10px;
+}
       position: relative;
       height: 300px;
       background: url('header.jpeg') center no-repeat;
@@ -151,17 +180,27 @@
 <!-- HEADER -->
 <div class="header-bg"></div>
 
-<div class="profile-wrapper">
+<div class="profile-section">
+  
   <img src="profile.jpeg" class="profile">
 
-  <h1>Siti Nur Halimah</h1>
-  <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
+  <div class="profile-info">
+    <h1>Siti Nur Halimah</h1>
+    
+    <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
 
-  <div class="social">
-    <a href="https://linkedin.com/in/sitinurhalimaah" target="_blank">LinkedIn</a>
-    <a href="https://instagram.com/halimahstn" target="_blank">Instagram</a>
-    <a href="mailto:snhalimaah@gmail.com">Email</a>
+    <p class="desc">
+      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil di Institut Teknologi Sepuluh Nopember.  
+      Berpengalaman dalam analisis distribusi air, tekanan jaringan, serta quality control konstruksi.
+    </p>
+
+    <div class="social">
+      <a href="https://linkedin.com/in/sitinurhalimaah" target="_blank">LinkedIn</a>
+      <a href="https://instagram.com/halimahstn" target="_blank">Instagram</a>
+      <a href="mailto:snhalimaah@gmail.com">Email</a>
+    </div>
   </div>
+
 </div>
 
 <div class="container">
