@@ -14,7 +14,6 @@
     header {
       text-align: center;
       padding: 60px 20px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
     header h1 {
@@ -24,13 +23,12 @@
 
     header p {
       opacity: 0.8;
-      margin-top: 10px;
     }
 
     .container {
-      padding: 40px;
       max-width: 1000px;
       margin: auto;
+      padding: 30px;
     }
 
     .card {
@@ -39,64 +37,35 @@
       margin-bottom: 25px;
       border-radius: 12px;
       backdrop-filter: blur(10px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
     }
 
     h2 {
-      border-left: 4px solid #00bcd4;
+      border-left: 4px solid #00e5ff;
       padding-left: 10px;
-      margin-bottom: 15px;
     }
 
-    h3 {
-      margin-top: 15px;
-      color: #00e5ff;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .highlight {
-      color: #00e5ff;
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #00e5ff;
+      color: #1e2a38;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
     }
+
     .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
 
-.project-card {
-  background: rgba(255,255,255,0.05);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-.project-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.project-card p {
-  padding: 10px;
-  font-size: 14px;
-}
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
   </style>
 </head>
@@ -105,77 +74,63 @@
 
 <header>
   <h1>Siti Nur Halimah</h1>
-  <p>Civil Engineering | Water Infrastructure</p>
+  <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
 </header>
 
 <div class="container">
 
   <div class="card">
-    <h2>About Me</h2>
+    <h2>Tentang Saya</h2>
     <p>
-    Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam analisis distribusi air,
-    tekanan, dan proyek konstruksi. Memiliki ketertarikan kuat pada infrastruktur air dan manajemen proyek.
+      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam sistem distribusi air dan proyek konstruksi. 
+      Berfokus pada analisis hidrolika, tekanan, dan optimasi jaringan air.
     </p>
   </div>
 
   <div class="card">
-    <h2>Internship Experience</h2>
-
-    <h3>PAM JAYA – Water Distribution Internship</h3>
-    <ul>
-      <li>Monitoring dan analisis tekanan & debit jaringan distribusi air</li>
-      <li>Identifikasi kebocoran dan masalah tekanan rendah</li>
-      <li>Analisis jaringan menggunakan ArcGIS & data real-time</li>
-      <li>Support operasional: flushing, valve checking</li>
-    </ul>
-
-    <h3>PT Wijaya Karya Bangunan Gedung (WIKA)</h3>
-    <ul>
-      <li>Quality control pekerjaan arsitektur & finishing</li>
-      <li>Perhitungan volume pekerjaan dari shop drawing</li>
-      <li>Rekap data proyek & laporan mingguan</li>
-    </ul>
+    <h2>Portofolio & CV</h2>
+    <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank" class="btn">
+      📂 Lihat Portofolio
+    </a>
   </div>
-
-<div class="card">
-  <h2>Projects</h2>
-
-  <div class="project-grid">
-
-    <div class="project-card">
-      <img src="proter.jpeg">
-      <p><b>Rehabilitasi Irigasi Tarum Utara Barat</b><br>
-      Analisis sedimentasi & solusi teknis</p>
-    </div>
-
-    <div class="project-card">
-      <img src="drainase.jpeg">
-      <p><b>Drainase Lembah Harapan</b><br>
-      Analisis hidrologi & perencanaan saluran</p>
-    </div>
-
-    <div class="project-card">
-      <img src="tender.jpeg">
-      <p><b>Lomba Tender Nasional</b><br>
-      Penyusunan RAB, BOQ, dan scheduling</p>
-    </div>
-
-  </div>
-</div>
 
   <div class="card">
-    <h2>Skills</h2>
+    <h2>Pengalaman Magang</h2>
+
+    <b>PAM JAYA</b>
     <ul>
-      <li>ArcGIS</li>
-      <li>AutoCAD</li>
-      <li>Microsoft Excel</li>
-      <li>Analisis Hidrolika</li>
+      <li>Analisis tekanan & debit</li>
+      <li>Deteksi kebocoran</li>
+      <li>ArcGIS & data real-time</li>
+    </ul>
+
+    <b>WIKA Gedung</b>
+    <ul>
+      <li>Quality control</li>
+      <li>Perhitungan volume</li>
     </ul>
   </div>
 
   <div class="card">
-    <h2>Contact</h2>
-    <p>Email: snhalimaah@gmail.com</p>
+    <h2>Proyek</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="proter.jpeg">
+        <p>Irigasi Tarum Barat</p>
+      </div>
+
+      <div class="project-card">
+        <img src="drainase.jpeg">
+        <p>Drainase Surabaya</p>
+      </div>
+
+      <div class="project-card">
+        <img src="tender.jpeg">
+        <p>Lomba Tender</p>
+      </div>
+    </div>
+
   </div>
 
 </div>
