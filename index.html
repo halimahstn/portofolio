@@ -42,11 +42,11 @@
       background-color: #1e2a38;
     }
 
-    /* LINKEDIN STYLE */
+    /* PROFILE (LINKEDIN STYLE) */
     .profile-section {
       max-width: 1000px;
       margin: auto;
-      margin-top: -40px; /* FIX biar ga terlalu naik */
+      margin-top: -40px;
       display: flex;
       align-items: center;
       gap: 30px;
@@ -115,6 +115,10 @@
       padding-left: 10px;
     }
 
+    .card ul {
+      margin-top: 8px;
+    }
+
     .btn {
       display: inline-block;
       padding: 12px 20px;
@@ -127,6 +131,7 @@
 
     .btn:hover { background: white; }
 
+    /* PROJECT */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -186,6 +191,7 @@
 
 <div class="container">
 
+  <!-- ABOUT -->
   <div class="card" id="about">
     <h2>Tentang Saya</h2>
     <p>
@@ -193,30 +199,33 @@
       Berfokus pada analisis hidrolika, tekanan, dan optimasi jaringan air.
     </p>
   </div>
+
+  <!-- EXPERIENCE -->
   <div class="card" id="experience">
-  <h2>Pengalaman Magang</h2>
+    <h2>Pengalaman Magang</h2>
 
-  <div style="margin-bottom:15px;">
-    <b>💧 PAM JAYA – Water Distribution Internship</b>
-    <ul>
-      <li>Monitoring dan analisis tekanan & debit jaringan distribusi air</li>
-      <li>Identifikasi kebocoran dan permasalahan tekanan rendah</li>
-      <li>Analisis jaringan menggunakan ArcGIS dan data real-time</li>
-      <li>Support operasional: flushing dan valve checking</li>
-    </ul>
+    <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
+      <b>💧 PAM JAYA – Water Distribution Internship</b>
+      <ul>
+        <li>Monitoring dan analisis <b>tekanan & debit</b> jaringan distribusi air</li>
+        <li>Identifikasi <b>kebocoran</b> dan permasalahan tekanan rendah</li>
+        <li>Analisis jaringan menggunakan <b>ArcGIS</b> dan data real-time</li>
+        <li>Support operasional: <b>flushing</b> dan <b>valve checking</b></li>
+      </ul>
+    </div>
+
+    <div>
+      <b>🏗️ PT Wijaya Karya Bangunan Gedung (WIKA)</b>
+      <ul>
+        <li>Quality control pekerjaan arsitektur dan finishing</li>
+        <li>Perhitungan volume pekerjaan berdasarkan shop drawing</li>
+        <li>Rekap data proyek dan penyusunan laporan mingguan</li>
+      </ul>
+    </div>
+
   </div>
 
-  <div>
-    <b>🏗️ PT Wijaya Karya Bangunan Gedung (WIKA)</b>
-    <ul>
-      <li>Quality control pekerjaan arsitektur dan finishing</li>
-      <li>Perhitungan volume pekerjaan berdasarkan shop drawing</li>
-      <li>Rekap data proyek dan penyusunan laporan mingguan</li>
-    </ul>
-  </div>
-
-</div>
-
+  <!-- PORTFOLIO -->
   <div class="card">
     <h2>Portofolio & CV</h2>
     <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank" class="btn">
@@ -224,6 +233,7 @@
     </a>
   </div>
 
+  <!-- PROJECT -->
   <div class="card" id="project">
     <h2>Proyek</h2>
 
@@ -246,6 +256,7 @@
 
   </div>
 
+  <!-- CONTACT -->
   <div class="card" id="contact">
     <h2>Kontak</h2>
     <p>Email: snhalimaah@gmail.com</p>
