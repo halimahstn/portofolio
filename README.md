@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="header.jpeg" width="100%" />
+<a href="https://halimahstn.github.io/portofolio/">
+  <img src="https://img.shields.io/badge/🌐%20Visit%20My%20Website-00E5FF?style=for-the-badge"/>
+</a>
 </p>
 
 <h1 align="center">👷‍♀️ Siti Nur Halimah</h1>
