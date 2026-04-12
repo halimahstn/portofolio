@@ -16,10 +16,21 @@
 
 ## 🌊 About Me
 Mahasiswa tingkat akhir Teknik Infrastruktur Sipil yang berfokus pada **infrastruktur air 💧, analisis hidrolika, dan manajemen proyek**.  
-Memiliki pengalaman dalam **analisis tekanan & debit jaringan distribusi air, deteksi kebocoran, serta optimasi sistem perpipaan**.  
+Berpengalaman dalam **analisis tekanan & debit, deteksi kebocoran, serta optimasi jaringan distribusi air berbasis data**.  
 
-Selain itu, juga berpengalaman dalam **quality control konstruksi, estimasi volume pekerjaan, dan koordinasi proyek di lapangan**.  
-Terbiasa bekerja secara **analitis, berbasis data, dan kolaboratif dalam tim**.
+Selain itu, memiliki pengalaman dalam **quality control konstruksi, estimasi volume pekerjaan, dan koordinasi proyek lapangan**.  
+Terbiasa bekerja secara **analitis, detail-oriented, dan kolaboratif dalam tim proyek**.
+
+---
+
+## 🎓 Education
+**Institut Teknologi Sepuluh Nopember (ITS)**  
+D4 Teknologi Rekayasa Konstruksi Bangunan Air  
+2022 – Present  
+
+**SMK Negeri 26 Jakarta**  
+Konstruksi Gedung, Sanitasi, dan Perawatan  
+2018 – 2022  
 
 ---
 
@@ -58,13 +69,27 @@ Terbiasa bekerja secara **analitis, berbasis data, dan kolaboratif dalam tim**.
 ---
 
 ## 🚧 Featured Projects
-🔹 **Rehabilitasi Irigasi Tarum Utara Barat**  
+
+### 💧 Rehabilitasi Irigasi Tarum Utara Barat
+<p align="center">
+  <img src="proter.jpeg" width="80%" />
+</p>
 ➡️ Analisis sedimentasi & perancangan solusi teknis  
 
-🔹 **Drainase Lembah Harapan**  
+---
+
+### 🌧️ Drainase Lembah Harapan
+<p align="center">
+  <img src="drainase.jpeg" width="80%" />
+</p>
 ➡️ Analisis banjir & perencanaan sistem drainase  
 
-🔹 **Lomba Tender Nasional (RAB & BOQ)**  
+---
+
+### 🏗️ Lomba Tender Nasional
+<p align="center">
+  <img src="tender.jpeg" width="80%" />
+</p>
 ➡️ Penyusunan estimasi biaya, BOQ, dan scheduling  
 
 ---
