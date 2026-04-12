@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<b>Civil Engineering | Water Infrastructure 💧</b>
+<b>Civil Engineering</b>
 </p>
 
 ---
