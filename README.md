@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-<b>Mahasiswa Teknik Sipil | Fokus Infrastruktur Air 💧</b>
+<b>Mahasiswa Teknik Sipil</b>
 </p>
 
 ---
