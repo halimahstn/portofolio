@@ -8,7 +8,7 @@
 </a>
 </p>
 
-<h1 align="center">👷‍♀️ Siti Nur Halimah</h1>
+<h1 align="center">Siti Nur Halimah</h1>
 
 <p align="center">
 💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi
@@ -20,7 +20,7 @@
 
 ---
 
-## 🌊 Tentang Saya
+## Tentang Saya
 Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam **sistem distribusi air dan proyek infrastruktur**.  
 
 Memiliki fokus pada **infrastruktur air 💧, analisis hidrolika, dan manajemen proyek konstruksi**, dengan pengalaman dalam **analisis tekanan & debit, deteksi kebocoran, serta optimasi jaringan distribusi air berbasis data**.  
@@ -41,7 +41,7 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 
 ---
 
-## 🚀 Portofolio & CV
+## Portofolio & CV
 <p align="center">
 <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm">
   <img src="https://img.shields.io/badge/Lihat%20Portofolio%20%26%20CV-00C853?style=for-the-badge&logo=google-drive&logoColor=white"/>
