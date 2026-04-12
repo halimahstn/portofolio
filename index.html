@@ -34,10 +34,12 @@
     nav a:hover { color: #00e5ff; }
 
     /* HEADER IMAGE */
-    .header-bg {
-      position: relative;
-      height: 230px;
-      background: url('header.jpeg') center/cover no-repeat;
+    .header-bg {.header-bg {
+  position: relative;
+  height: 260px;
+  background: url('header.jpeg') no-repeat center;
+  background-size: contain;
+  background-color: #1e2a38;
     }
 
     .header-bg::after {
