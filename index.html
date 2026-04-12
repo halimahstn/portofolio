@@ -18,6 +18,7 @@
       scroll-margin-top: 90px;
     }
 
+    /* NAVBAR */
     nav {
       position: fixed;
       width: 100%;
@@ -36,6 +37,7 @@
 
     nav a:hover { color: #00e5ff; }
 
+    /* HEADER */
     .header-bg {
       height: 300px;
       background: url('header.jpeg') center no-repeat;
@@ -43,6 +45,7 @@
       background-color: #1e2a38;
     }
 
+    /* PROFILE */
     .profile-section {
       max-width: 1000px;
       margin: auto;
@@ -77,6 +80,7 @@
       font-size: 13px;
     }
 
+    /* CONTENT */
     .container {
       max-width: 1000px;
       margin: auto;
@@ -90,14 +94,18 @@
       border-radius: 12px;
       backdrop-filter: blur(10px);
       animation: fadeUp 1s ease;
+      text-align: center;
     }
 
     h2 {
       border-left: 4px solid #00e5ff;
       padding-left: 10px;
+      text-align: left;
     }
 
     .btn {
+      display: inline-block;
+      margin-top: 15px;
       padding: 12px 20px;
       background: #00e5ff;
       color: #1e2a38;
@@ -106,10 +114,14 @@
       font-weight: bold;
     }
 
+    .btn:hover { background: white; }
+
+    /* PROJECT */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      text-align: left;
     }
 
     .project-card img {
@@ -125,11 +137,13 @@
       opacity: 0.6;
     }
 
+    /* ANIMATION */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* MOBILE */
     @media (max-width: 768px) {
       .profile-section {
         flex-direction: column;
@@ -179,31 +193,35 @@
     <p>
       Memiliki minat pada infrastruktur air dan manajemen proyek konstruksi. 
       Berpengalaman dalam analisis hidrolika, pemantauan tekanan dan debit, serta optimasi jaringan perpipaan.
-      Selain itu juga memiliki pengalaman dalam pengendalian mutu konstruksi dan estimasi volume pekerjaan.
     </p>
+  </div>
+
+  <!-- FIX PORTFOLIO -->
+  <div class="card">
+    <h2>Portofolio & CV</h2>
+
+    <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" 
+       target="_blank" 
+       class="btn">
+       📂 Lihat Portofolio & CV
+    </a>
   </div>
 
   <div class="card" id="experience">
     <h2>Pengalaman Magang</h2>
 
-    <b>💧 PAM JAYA – Water Distribution Internship</b>
-    <ul>
-      <li>Melakukan monitoring dan analisis tekanan serta debit pada jaringan distribusi air</li>
-      <li>Mengidentifikasi kebocoran dan area dengan tekanan rendah untuk peningkatan layanan</li>
-      <li>Menganalisis jaringan distribusi menggunakan ArcGIS dan data operasional real-time</li>
-      <li>Melakukan kegiatan operasional seperti flushing jaringan dan pengecekan valve</li>
-      <li>Membantu evaluasi performa jaringan untuk optimasi distribusi air</li>
+    <b>💧 PAM JAYA</b>
+    <ul style="text-align:left;">
+      <li>Monitoring tekanan & debit</li>
+      <li>Deteksi kebocoran</li>
+      <li>Analisis ArcGIS</li>
     </ul>
 
-    <br>
-
-    <b>🏗️ PT Wijaya Karya Bangunan Gedung (WIKA)</b>
-    <ul>
-      <li>Melakukan quality control pekerjaan arsitektur dan finishing di lapangan</li>
-      <li>Menghitung volume pekerjaan berdasarkan shop drawing</li>
-      <li>Menyusun rekap data proyek dan laporan mingguan</li>
-      <li>Berkoordinasi dengan tim lapangan untuk memastikan kesesuaian pekerjaan</li>
-      <li>Mendukung pengendalian mutu dan progres proyek konstruksi</li>
+    <b>🏗️ WIKA</b>
+    <ul style="text-align:left;">
+      <li>Quality control</li>
+      <li>Perhitungan volume</li>
+      <li>Laporan proyek</li>
     </ul>
   </div>
 
@@ -213,19 +231,20 @@
     <div class="project-grid">
       <div class="project-card">
         <img src="proter.jpeg">
-        <p><b>Irigasi Tarum Utara Barat</b><br>Analisis sedimentasi & solusi teknis</p>
+        <p><b>Irigasi Tarum</b></p>
       </div>
 
       <div class="project-card">
         <img src="drainase.jpeg">
-        <p><b>Drainase Lembah Harapan</b><br>Analisis hidrologi & perencanaan</p>
+        <p><b>Drainase</b></p>
       </div>
 
       <div class="project-card">
         <img src="tender.jpeg">
-        <p><b>Lomba Tender Nasional</b><br>RAB, BOQ & scheduling</p>
+        <p><b>Tender</b></p>
       </div>
     </div>
+
   </div>
 
   <div class="card" id="contact">
