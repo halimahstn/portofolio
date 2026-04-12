@@ -5,7 +5,7 @@
 <h1 align="center">👷‍♀️ Siti Nur Halimah</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&size=22&duration=3000&color=00E5FF&center=true&vCenter=true&width=700&lines=Civil+Engineering+Student;Water+Infrastructure+Enthusiast;Hydraulics+%26+Distribution+System;Future+Project+Engineer" />
+💧 Water Infrastructure | 🏗️ Project Management | 🏢 Construction
 </p>
 
 <p align="center">
