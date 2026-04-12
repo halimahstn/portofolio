@@ -2,53 +2,139 @@
 <html>
 <head>
   <title>Siti Nur Halimah Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e2a38, #2c3e50);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      opacity: 0.8;
+      margin-top: 10px;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      border-left: 4px solid #00bcd4;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-top: 15px;
+      color: #00e5ff;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      color: #00e5ff;
+      font-weight: bold;
+    }
+
+  </style>
 </head>
 
-<body style="font-family: Arial; margin: 40px;">
+<body>
 
-<h1>Siti Nur Halimah</h1>
-<p><b>Civil Engineering | Water Infrastructure</b></p>
+<header>
+  <h1>Siti Nur Halimah</h1>
+  <p>Civil Engineering | Water Infrastructure</p>
+</header>
 
-<h2>About Me</h2>
-<p>
-Mahasiswa Teknik Infrastruktur Sipil dengan pengalaman dalam analisis distribusi air,
-tekanan, dan proyek konstruksi. Berfokus pada infrastruktur air dan manajemen proyek.
-</p>
+<div class="container">
 
-<h2>Internship Experience</h2>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+    Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam analisis distribusi air,
+    tekanan, dan proyek konstruksi. Memiliki ketertarikan kuat pada infrastruktur air dan manajemen proyek.
+    </p>
+  </div>
 
-<h3>PAM JAYA – Water Distribution Internship</h3>
-<ul>
-  <li>Monitoring dan analisis tekanan & debit jaringan distribusi air</li>
-  <li>Identifikasi kebocoran dan masalah tekanan rendah</li>
-  <li>Analisis jaringan menggunakan ArcGIS & data real-time</li>
-  <li>Support operasional: flushing, valve checking</li>
-</ul>
+  <div class="card">
+    <h2>Internship Experience</h2>
 
-<h3>PT Wijaya Karya Bangunan Gedung (WIKA)</h3>
-<ul>
-  <li>Quality control pekerjaan arsitektur & finishing</li>
-  <li>Perhitungan volume pekerjaan dari shop drawing</li>
-  <li>Rekap data proyek & laporan mingguan</li>
-</ul>
+    <h3>PAM JAYA – Water Distribution Internship</h3>
+    <ul>
+      <li>Monitoring dan analisis tekanan & debit jaringan distribusi air</li>
+      <li>Identifikasi kebocoran dan masalah tekanan rendah</li>
+      <li>Analisis jaringan menggunakan ArcGIS & data real-time</li>
+      <li>Support operasional: flushing, valve checking</li>
+    </ul>
 
-<h2>Projects</h2>
-<ul>
-  <li>Rehabilitasi Irigasi Tarum Utara Barat</li>
-  <li>Drainase Lembah Harapan</li>
-  <li>Lomba Tender Nasional (RAB & BOQ)</li>
-</ul>
+    <h3>PT Wijaya Karya Bangunan Gedung (WIKA)</h3>
+    <ul>
+      <li>Quality control pekerjaan arsitektur & finishing</li>
+      <li>Perhitungan volume pekerjaan dari shop drawing</li>
+      <li>Rekap data proyek & laporan mingguan</li>
+    </ul>
+  </div>
 
-<h2>Skills</h2>
-<ul>
-  <li>ArcGIS</li>
-  <li>AutoCAD</li>
-  <li>Microsoft Excel</li>
-  <li>Analisis Hidrolika</li>
-</ul>
+  <div class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li><span class="highlight">Rehabilitasi Irigasi Tarum Utara Barat</span></li>
+      <li><span class="highlight">Drainase Lembah Harapan</span></li>
+      <li><span class="highlight">Lomba Tender Nasional (RAB & BOQ)</span></li>
+    </ul>
+  </div>
 
-<h2>Contact</h2>
-<p>Email: snhalimaah@gmail.com</p>
+  <div class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>ArcGIS</li>
+      <li>AutoCAD</li>
+      <li>Microsoft Excel</li>
+      <li>Analisis Hidrolika</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: snhalimaah@gmail.com</p>
+  </div>
+
+</div>
 
 </body>
 </html>
