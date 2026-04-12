@@ -9,16 +9,17 @@
 </p>
 
 <p align="center">
-<b>Civil Engineering</b>
+<b>Civil Engineering Student | Water Infrastructure Focus 💧</b>
 </p>
 
 ---
 
 ## 🌊 About Me
-Mahasiswa tingkat akhir Teknik Infrastruktur Sipil yang berfokus pada **infrastruktur air 💧, analisis hidrolika, dan manajemen proyek**.  
-Berpengalaman dalam **analisis tekanan & debit, deteksi kebocoran, serta optimasi jaringan distribusi air berbasis data**.  
+Final-year Civil Engineering student with hands-on experience in **water distribution systems and infrastructure projects**.  
 
-Selain itu, memiliki pengalaman dalam **quality control konstruksi, estimasi volume pekerjaan, dan koordinasi proyek lapangan**.  
+Memiliki fokus pada **infrastruktur air 💧, analisis hidrolika, dan manajemen proyek konstruksi**, dengan pengalaman dalam **analisis tekanan & debit, deteksi kebocoran, serta optimasi jaringan distribusi air berbasis data**.  
+
+Selain itu, berpengalaman dalam **quality control konstruksi, estimasi volume pekerjaan, dan koordinasi proyek lapangan**.  
 Terbiasa bekerja secara **analitis, detail-oriented, dan kolaboratif dalam tim proyek**.
 
 ---
@@ -46,15 +47,15 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 ## 💼 Internship Experience
 
 ### 💧 PAM JAYA – Water Distribution Internship
-- Monitoring dan analisis **tekanan & debit jaringan distribusi air**  
-- Identifikasi **kebocoran & tekanan rendah**  
-- Analisis jaringan menggunakan **ArcGIS & data real-time**  
-- Support operasional: flushing & valve checking  
+- Monitoring dan analisis **tekanan & debit jaringan distribusi air berbasis data real-time**  
+- Identifikasi **kebocoran & permasalahan tekanan rendah**  
+- Analisis jaringan menggunakan **ArcGIS dan evaluasi sistem distribusi**  
+- Mendukung operasional jaringan: flushing & valve checking  
 
 ### 🏗️ PT Wijaya Karya Bangunan Gedung (WIKA)
 - Quality control pekerjaan arsitektur & finishing  
-- Perhitungan volume pekerjaan dari shop drawing  
-- Rekap data proyek & laporan mingguan  
+- Perhitungan volume pekerjaan berdasarkan shop drawing  
+- Rekap data proyek & penyusunan laporan mingguan  
 
 ---
 
@@ -68,13 +69,22 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 
 ---
 
+## 🧠 Strengths
+- Problem Solving  
+- Analytical Thinking  
+- Team Collaboration  
+- Communication  
+- Time Management  
+
+---
+
 ## 🚧 Featured Projects
 
 ### 💧 Rehabilitasi Irigasi Tarum Utara Barat
 <p align="center">
   <img src="proter.jpeg" width="80%" />
 </p>
-➡️ Analisis sedimentasi & perancangan solusi teknis  
+➡️ Analisis sedimentasi & perancangan solusi teknis untuk meningkatkan kinerja saluran irigasi  
 
 ---
 
@@ -82,7 +92,7 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 <p align="center">
   <img src="drainase.jpeg" width="80%" />
 </p>
-➡️ Analisis banjir & perencanaan sistem drainase  
+➡️ Analisis hidrologi & perencanaan sistem drainase untuk mengurangi genangan  
 
 ---
 
@@ -90,7 +100,7 @@ Konstruksi Gedung, Sanitasi, dan Perawatan
 <p align="center">
   <img src="tender.jpeg" width="80%" />
 </p>
-➡️ Penyusunan estimasi biaya, BOQ, dan scheduling  
+➡️ Penyusunan RAB, BOQ, dan penjadwalan proyek konstruksi  
 
 ---
 
