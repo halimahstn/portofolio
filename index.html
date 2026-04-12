@@ -65,10 +65,18 @@
       border: 5px solid #1e2a38;
     }
 
+    .profile-info {
+      text-align: left;
+    }
+
     .profile-info h1 { margin: 0; font-size: 28px; }
     .profile-info p { margin: 5px 0; opacity: 0.85; }
 
-    .desc { margin-top: 10px; font-size: 14px; }
+    .desc {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
 
     .social a {
       margin-right: 10px;
@@ -94,13 +102,12 @@
       border-radius: 12px;
       backdrop-filter: blur(10px);
       animation: fadeUp 1s ease;
-      text-align: center;
+      text-align: left;
     }
 
     h2 {
       border-left: 4px solid #00e5ff;
       padding-left: 10px;
-      text-align: left;
     }
 
     .btn {
@@ -114,14 +121,38 @@
       font-weight: bold;
     }
 
-    .btn:hover { background: white; }
+    /* EXPERIENCE */
+    .exp {
+      margin-top: 20px;
+      border-left: 3px solid #00e5ff;
+      padding-left: 15px;
+    }
+
+    .exp h3 {
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    .date {
+      font-size: 13px;
+      opacity: 0.7;
+    }
+
+    .exp ul {
+      margin-top: 10px;
+      padding-left: 18px;
+    }
+
+    .exp li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
 
     /* PROJECT */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      text-align: left;
     }
 
     .project-card img {
@@ -145,12 +176,23 @@
 
     /* MOBILE */
     @media (max-width: 768px) {
+
       .profile-section {
         flex-direction: column;
         text-align: center;
       }
+
       .profile { width: 120px; height: 120px; }
+
+      .profile-info {
+        text-align: center;
+      }
+
       .header-bg { height: 200px; }
+
+      .exp h3 { font-size: 16px; }
+      .exp li { font-size: 14px; }
+
     }
   </style>
 </head>
@@ -174,8 +216,7 @@
     <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
 
     <p class="desc">
-      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil ITS dengan pengalaman dalam analisis distribusi air, 
-      tekanan jaringan, serta quality control konstruksi.
+      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil ITS dengan pengalaman dalam analisis distribusi air, tekanan jaringan, serta quality control konstruksi.
     </p>
 
     <div class="social">
@@ -191,38 +232,42 @@
   <div class="card" id="about">
     <h2>Tentang Saya</h2>
     <p>
-      Memiliki minat pada infrastruktur air dan manajemen proyek konstruksi. 
-      Berpengalaman dalam analisis hidrolika, pemantauan tekanan dan debit, serta optimasi jaringan perpipaan.
+      Memiliki minat kuat dalam bidang infrastruktur air, khususnya pada analisis hidrolika, tekanan, dan optimasi jaringan distribusi air.
+      Berpengalaman dalam analisis sistem distribusi berbasis data serta pengendalian mutu konstruksi.
     </p>
   </div>
 
-  <!-- FIX PORTFOLIO -->
   <div class="card">
     <h2>Portofolio & CV</h2>
-
-    <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" 
-       target="_blank" 
-       class="btn">
-       📂 Lihat Portofolio & CV
+    <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank" class="btn">
+      📂 Lihat Portofolio & CV
     </a>
   </div>
 
   <div class="card" id="experience">
     <h2>Pengalaman Magang</h2>
 
-    <b>💧 PAM JAYA</b>
-    <ul style="text-align:left;">
-      <li>Monitoring tekanan & debit</li>
-      <li>Deteksi kebocoran</li>
-      <li>Analisis ArcGIS</li>
-    </ul>
+    <div class="exp">
+      <h3>💧 PT PAM JAYA</h3>
+      <span class="date">2025</span>
+      <ul>
+        <li>Monitoring tekanan & debit jaringan distribusi air</li>
+        <li>Analisis kebocoran dan tekanan rendah</li>
+        <li>Pemetaan jaringan menggunakan ArcGIS</li>
+        <li>Flushing dan pengecekan valve</li>
+      </ul>
+    </div>
 
-    <b>🏗️ WIKA</b>
-    <ul style="text-align:left;">
-      <li>Quality control</li>
-      <li>Perhitungan volume</li>
-      <li>Laporan proyek</li>
-    </ul>
+    <div class="exp">
+      <h3>🏗️ PT WIKA Gedung</h3>
+      <span class="date">2021 – 2022</span>
+      <ul>
+        <li>Quality control pekerjaan konstruksi</li>
+        <li>Perhitungan volume pekerjaan</li>
+        <li>Penyusunan laporan proyek</li>
+      </ul>
+    </div>
+
   </div>
 
   <div class="card" id="project">
