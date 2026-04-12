@@ -7,13 +7,14 @@
     html { scroll-behavior: smooth; }
 
     body {
-      margin: 1;
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #1e2a38;
       color: white;
       padding-top: 60px;
     }
 
+    /* FIX SCROLL */
     #about, #experience, #project, #contact {
       scroll-margin-top: 90px;
     }
@@ -22,7 +23,7 @@
     nav {
       position: fixed;
       width: 100%;
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
       padding: 12px;
       text-align: center;
       backdrop-filter: blur(10px);
@@ -49,7 +50,7 @@
     .profile-section {
       max-width: 1000px;
       margin: auto;
-      margin-top: 20px;
+      margin-top: -30px; /* lebih turun dari sebelumnya */
       display: flex;
       align-items: center;
       gap: 30px;
@@ -66,11 +67,19 @@
     }
 
     .profile-info {
+      margin-top: 20px; /* 🔥 INI YANG FIX POSISI NAMA */
       text-align: left;
     }
 
-    .profile-info h1 { margin: 0; font-size: 28px; }
-    .profile-info p { margin: 5px 0; opacity: 0.85; }
+    .profile-info h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .profile-info p {
+      margin: 5px 0;
+      opacity: 0.85;
+    }
 
     .desc {
       margin-top: 10px;
@@ -186,6 +195,7 @@
 
       .profile-info {
         text-align: center;
+        margin-top: 10px;
       }
 
       .header-bg { height: 200px; }
