@@ -70,6 +70,33 @@
       color: #00e5ff;
       font-weight: bold;
     }
+    .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card p {
+  padding: 10px;
+  font-size: 14px;
+}
 
   </style>
 </head>
@@ -110,14 +137,31 @@
     </ul>
   </div>
 
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li><span class="highlight">Rehabilitasi Irigasi Tarum Utara Barat</span></li>
-      <li><span class="highlight">Drainase Lembah Harapan</span></li>
-      <li><span class="highlight">Lomba Tender Nasional (RAB & BOQ)</span></li>
-    </ul>
+<div class="card">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="proter.jpeg">
+      <p><b>Rehabilitasi Irigasi Tarum Utara Barat</b><br>
+      Analisis sedimentasi & solusi teknis</p>
+    </div>
+
+    <div class="project-card">
+      <img src="drainase.jpeg">
+      <p><b>Drainase Lembah Harapan</b><br>
+      Analisis hidrologi & perencanaan saluran</p>
+    </div>
+
+    <div class="project-card">
+      <img src="tender.jpeg">
+      <p><b>Lomba Tender Nasional</b><br>
+      Penyusunan RAB, BOQ, dan scheduling</p>
+    </div>
+
   </div>
+</div>
 
   <div class="card">
     <h2>Skills</h2>
