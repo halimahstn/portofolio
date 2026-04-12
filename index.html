@@ -14,12 +14,10 @@
       padding-top: 60px;
     }
 
-    /* FIX NAVBAR NUTUP JUDUL 🔥 */
     #about, #experience, #project, #contact {
-      scroll-margin-top: 10px;
+      scroll-margin-top: 90px;
     }
 
-    /* NAVBAR */
     nav {
       position: fixed;
       width: 100%;
@@ -34,12 +32,10 @@
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: 500;
     }
 
     nav a:hover { color: #00e5ff; }
 
-    /* HEADER */
     .header-bg {
       height: 300px;
       background: url('header.jpeg') center no-repeat;
@@ -47,7 +43,6 @@
       background-color: #1e2a38;
     }
 
-    /* PROFILE */
     .profile-section {
       max-width: 1000px;
       margin: auto;
@@ -55,40 +50,25 @@
       display: flex;
       align-items: center;
       gap: 30px;
-      padding: 20px 20px 0;
+      padding: 20px;
+      animation: fadeUp 1s ease;
     }
 
     .profile {
-      width: 160px;
-      height: 160px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       border: 5px solid #1e2a38;
     }
 
-    .profile-info {
-      margin-top: 20px;
-    }
+    .profile-info h1 { margin: 0; font-size: 28px; }
+    .profile-info p { margin: 5px 0; opacity: 0.85; }
 
-    .profile-info h1 {
-      margin: 0;
-      font-size: 30px;
-    }
-
-    .profile-info p {
-      margin: 5px 0;
-      opacity: 0.85;
-    }
-
-    .profile-info .desc {
-      margin-top: 10px;
-      line-height: 1.5;
-      font-size: 14px;
-    }
+    .desc { margin-top: 10px; font-size: 14px; }
 
     .social a {
       margin-right: 10px;
-      display: inline-block;
       padding: 6px 12px;
       background: rgba(255,255,255,0.1);
       border-radius: 6px;
@@ -97,7 +77,6 @@
       font-size: 13px;
     }
 
-    /* CONTENT */
     .container {
       max-width: 1000px;
       margin: auto;
@@ -110,22 +89,15 @@
       margin-bottom: 25px;
       border-radius: 12px;
       backdrop-filter: blur(10px);
-      transition: 0.3s;
+      animation: fadeUp 1s ease;
     }
-
-    .card:hover { transform: translateY(-5px); }
 
     h2 {
       border-left: 4px solid #00e5ff;
       padding-left: 10px;
     }
 
-    .card ul {
-      margin-top: 8px;
-    }
-
     .btn {
-      display: inline-block;
       padding: 12px 20px;
       background: #00e5ff;
       color: #1e2a38;
@@ -134,9 +106,6 @@
       font-weight: bold;
     }
 
-    .btn:hover { background: white; }
-
-    /* PROJECT */
     .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -156,6 +125,19 @@
       opacity: 0.6;
     }
 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .profile-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile { width: 120px; height: 120px; }
+      .header-bg { height: 200px; }
+    }
   </style>
 </head>
 
@@ -168,100 +150,84 @@
   <a href="#contact">Kontak</a>
 </nav>
 
-<!-- HEADER -->
 <div class="header-bg"></div>
 
 <div class="profile-section">
-  
   <img src="profile.jpeg" class="profile">
 
   <div class="profile-info">
     <h1>Siti Nur Halimah</h1>
-    
     <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
 
     <p class="desc">
-      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil di Institut Teknologi Sepuluh Nopember.  
-      Berpengalaman dalam analisis distribusi air, tekanan jaringan, serta quality control konstruksi.
+      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil ITS dengan pengalaman dalam analisis distribusi air, 
+      tekanan jaringan, serta quality control konstruksi.
     </p>
 
     <div class="social">
-      <a href="https://linkedin.com/in/sitinurhalimaah" target="_blank">LinkedIn</a>
-      <a href="https://instagram.com/halimahstn" target="_blank">Instagram</a>
+      <a href="https://linkedin.com/in/sitinurhalimaah">LinkedIn</a>
+      <a href="https://instagram.com/halimahstn">Instagram</a>
       <a href="mailto:snhalimaah@gmail.com">Email</a>
     </div>
   </div>
-
 </div>
 
 <div class="container">
 
-  <!-- ABOUT -->
   <div class="card" id="about">
     <h2>Tentang Saya</h2>
     <p>
-      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil dengan pengalaman dalam sistem distribusi air dan proyek infrastruktur.
-      Berfokus pada analisis hidrolika, tekanan, dan optimasi jaringan air.
+      Memiliki minat pada infrastruktur air dan manajemen proyek konstruksi. 
+      Berpengalaman dalam analisis hidrolika, pemantauan tekanan dan debit, serta optimasi jaringan perpipaan.
+      Selain itu juga memiliki pengalaman dalam pengendalian mutu konstruksi dan estimasi volume pekerjaan.
     </p>
   </div>
 
-  <!-- EXPERIENCE -->
   <div class="card" id="experience">
     <h2>Pengalaman Magang</h2>
 
-    <div style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
-      <b>💧 PAM JAYA – Water Distribution Internship</b>
-      <ul>
-        <li>Monitoring dan analisis <b>tekanan & debit</b> jaringan distribusi air</li>
-        <li>Identifikasi <b>kebocoran</b> dan permasalahan tekanan rendah</li>
-        <li>Analisis jaringan menggunakan <b>ArcGIS</b> dan data real-time</li>
-        <li>Support operasional: <b>flushing</b> dan <b>valve checking</b></li>
-      </ul>
-    </div>
+    <b>💧 PAM JAYA – Water Distribution Internship</b>
+    <ul>
+      <li>Melakukan monitoring dan analisis tekanan serta debit pada jaringan distribusi air</li>
+      <li>Mengidentifikasi kebocoran dan area dengan tekanan rendah untuk peningkatan layanan</li>
+      <li>Menganalisis jaringan distribusi menggunakan ArcGIS dan data operasional real-time</li>
+      <li>Melakukan kegiatan operasional seperti flushing jaringan dan pengecekan valve</li>
+      <li>Membantu evaluasi performa jaringan untuk optimasi distribusi air</li>
+    </ul>
 
-    <div>
-      <b>🏗️ PT Wijaya Karya Bangunan Gedung (WIKA)</b>
-      <ul>
-        <li>Quality control pekerjaan arsitektur dan finishing</li>
-        <li>Perhitungan volume pekerjaan berdasarkan shop drawing</li>
-        <li>Rekap data proyek dan penyusunan laporan mingguan</li>
-      </ul>
-    </div>
+    <br>
 
+    <b>🏗️ PT Wijaya Karya Bangunan Gedung (WIKA)</b>
+    <ul>
+      <li>Melakukan quality control pekerjaan arsitektur dan finishing di lapangan</li>
+      <li>Menghitung volume pekerjaan berdasarkan shop drawing</li>
+      <li>Menyusun rekap data proyek dan laporan mingguan</li>
+      <li>Berkoordinasi dengan tim lapangan untuk memastikan kesesuaian pekerjaan</li>
+      <li>Mendukung pengendalian mutu dan progres proyek konstruksi</li>
+    </ul>
   </div>
 
-  <!-- PORTFOLIO -->
-  <div class="card">
-    <h2>Portofolio & CV</h2>
-    <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank" class="btn">
-      📂 Lihat Portofolio
-    </a>
-  </div>
-
-  <!-- PROJECT -->
   <div class="card" id="project">
     <h2>Proyek</h2>
 
     <div class="project-grid">
       <div class="project-card">
         <img src="proter.jpeg">
-        <p><b>Irigasi Tarum Utara Barat</b></p>
+        <p><b>Irigasi Tarum Utara Barat</b><br>Analisis sedimentasi & solusi teknis</p>
       </div>
 
       <div class="project-card">
         <img src="drainase.jpeg">
-        <p><b>Drainase Lembah Harapan</b></p>
+        <p><b>Drainase Lembah Harapan</b><br>Analisis hidrologi & perencanaan</p>
       </div>
 
       <div class="project-card">
         <img src="tender.jpeg">
-        <p><b>Lomba Tender Nasional</b></p>
+        <p><b>Lomba Tender Nasional</b><br>RAB, BOQ & scheduling</p>
       </div>
     </div>
-
   </div>
 
-  <!-- CONTACT -->
   <div class="card" id="contact">
     <h2>Kontak</h2>
     <p>Email: snhalimaah@gmail.com</p>
