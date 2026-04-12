@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<b>Civil Engineering Student | Water Infrastructure Focus 💧</b>
+<b>Civil Engineering Student</b>
 </p>
 
 ---
