@@ -55,7 +55,7 @@ scroll-margin-top:95px;
 .wrap{
 max-width:1200px;
 margin:auto;
-padding:0 22px;
+padding:0 20px;
 }
 
 /* HEADER */
@@ -91,23 +91,20 @@ flex:1;
 }
 
 .info h1{
-font-size:64px;
+font-size:62px;
 line-height:1;
 margin-bottom:16px;
 }
 
 .tag{
 font-size:22px;
-color:#eef3f7;
 margin-bottom:14px;
 }
 
 .desc{
 font-size:16px;
-line-height:1.8;
 max-width:850px;
 margin-bottom:18px;
-color:#f0f4f7;
 }
 
 .btns a{
@@ -119,7 +116,6 @@ text-decoration:none;
 border-radius:10px;
 margin-right:10px;
 margin-top:8px;
-font-size:14px;
 }
 
 .btns a:hover{
@@ -141,19 +137,20 @@ margin-bottom:24px;
 
 .card h2{
 font-size:32px;
-margin-bottom:20px;
+margin-bottom:22px;
 border-left:5px solid #00e5ff;
 padding-left:12px;
 }
 
+/* TIMELINE */
 .timeline{
 border-left:3px solid #00e5ff;
 padding-left:18px;
-margin-bottom:24px;
+margin-bottom:28px;
 }
 
 .timeline h3{
-font-size:21px;
+font-size:22px;
 margin-bottom:5px;
 }
 
@@ -172,20 +169,49 @@ padding-left:18px;
 margin-bottom:8px;
 }
 
-/* GRID */
-.grid{
+/* MAGANG FOTO */
+.gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:22px;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:14px;
+margin:18px 0;
 }
 
-.box{
+.gallery img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+}
+
+/* PROJECT SLIDER */
+.scroll-project{
+display:flex;
+gap:18px;
+overflow-x:auto;
+padding-bottom:10px;
+scrollbar-width:thin;
+}
+
+.scroll-project::-webkit-scrollbar{
+height:8px;
+}
+
+.scroll-project::-webkit-scrollbar-thumb{
+background:#00e5ff;
+border-radius:10px;
+}
+
+.project-card{
+min-width:320px;
+max-width:320px;
 background:#314255;
-padding:20px;
 border-radius:16px;
+padding:18px;
+flex-shrink:0;
 }
 
-.box img{
+.project-card img{
 width:100%;
 height:220px;
 object-fit:cover;
@@ -193,10 +219,28 @@ border-radius:12px;
 margin-bottom:14px;
 }
 
-.box h4{
+.project-card h4{
 color:#00e5ff;
 font-size:20px;
 margin-bottom:12px;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:18px;
+}
+
+.box{
+background:#314255;
+padding:18px;
+border-radius:16px;
+}
+
+.box h4{
+color:#00e5ff;
+margin-bottom:10px;
 }
 
 footer{
@@ -209,7 +253,6 @@ color:#b8c2cc;
 @media(max-width:768px){
 
 nav{
-padding:12px 8px;
 overflow-x:auto;
 white-space:nowrap;
 }
@@ -228,7 +271,7 @@ flex-direction:column;
 align-items:center;
 text-align:center;
 margin-top:-55px;
-padding:0 12px 20px;
+padding:0 10px 20px;
 }
 
 .photo{
@@ -251,7 +294,6 @@ font-size:16px;
 
 .desc{
 font-size:14px;
-line-height:1.7;
 }
 
 .card{
@@ -262,16 +304,12 @@ padding:22px;
 font-size:25px;
 }
 
-.timeline h3{
-font-size:18px;
+.project-card{
+min-width:280px;
 }
 
-.grid{
-grid-template-columns:1fr;
-}
-
-.box img{
-height:210px;
+.gallery{
+grid-template-columns:1fr 1fr;
 }
 
 }
@@ -300,7 +338,6 @@ height:210px;
 <img src="profile.jpeg" class="photo">
 
 <div class="info">
-
 <h1>Siti Nur Halimah</h1>
 
 <p class="tag">
@@ -308,7 +345,7 @@ height:210px;
 </p>
 
 <p class="desc">
-Mahasiswa tingkat akhir Teknik Infrastruktur Sipil Institut Teknologi Sepuluh Nopember dengan pengalaman dalam distribusi air, quality control konstruksi, estimasi biaya proyek, dan koordinasi lapangan. Aktif dalam organisasi, kompetisi, dan pengembangan kepemimpinan.
+Mahasiswa tingkat akhir Teknik Infrastruktur Sipil Institut Teknologi Sepuluh Nopember dengan pengalaman dalam distribusi air, quality control konstruksi, estimasi biaya proyek, dan koordinasi lapangan.
 </p>
 
 <div class="btns">
@@ -335,10 +372,9 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 
 <div class="timeline">
 <h3>🎓 Institut Teknologi Sepuluh Nopember</h3>
-<span class="date">2022 – 2026 (Expected)</span>
+<span class="date">2022 – 2026</span>
 <ul>
 <li>D4 Teknik Infrastruktur Sipil</li>
-<li>Fokus studi: Infrastruktur Air dan Sistem Distribusi</li>
 </ul>
 </div>
 
@@ -358,6 +394,13 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 <div class="timeline">
 <h3>💧 PT PAM JAYA Jakarta</h3>
 <span class="date">Juli – Desember 2025</span>
+
+<div class="gallery">
+<img src="PAM Cek Pressure.jpeg">
+<img src="PAM Relokasi Jaringan.jpeg">
+<img src="PAM Rumah Pompa Pasae Rebo.jpeg">
+</div>
+
 <ul>
 <li>Monitoring tekanan & debit jaringan distribusi air berbasis real-time data</li>
 <li>Analisis kebocoran, tekanan rendah, dan gangguan aliran</li>
@@ -370,6 +413,14 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 <div class="timeline">
 <h3>🏗️ PT Wijaya Karya Bangunan Gedung Tbk</h3>
 <span class="date">April 2021 – Februari 2022</span>
+
+<div class="gallery">
+<img src="WIKA RPK.jpeg">
+<img src="WIKA RPK2.jpeg">
+<img src="WIKA RPK dokumen.jpeg">
+<img src="WIKA test sandcone.jpeg">
+</div>
+
 <ul>
 <li>Checklist defect pekerjaan arsitektur & finishing</li>
 <li>Membantu pemeriksaan mutu lapangan bersama konsultan</li>
@@ -384,46 +435,36 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 <section class="card" id="project">
 <h2>Proyek</h2>
 
-<div class="grid">
+<div class="scroll-project">
 
-<div class="box">
+<div class="project-card">
 <img src="proter.jpeg">
 <h4>🏆 Proyek Terintegrasi 2025</h4>
-<p>
-Pemulihan saluran irigasi Tarum Utara Barat akibat erosi dan sedimentasi. Meliputi analisis sedimentasi, evaluasi hidrolika, solusi teknis, RAB, dan mitigasi lingkungan.
-</p>
+<p>Pemulihan saluran irigasi Tarum Utara Barat akibat erosi dan sedimentasi.</p>
 </div>
 
-<div class="box">
+<div class="project-card">
 <img src="drainase.jpeg">
 <h4>🌧️ Drainase Lembah Harapan</h4>
-<p>
-Analisis hidrologi, hidrolika, elevasi saluran, desain dimensi saluran, kolam detensi, RAB, dan RKS untuk mengatasi genangan.
-</p>
+<p>Analisis hidrologi, hidrolika, desain dimensi saluran, kolam detensi.</p>
 </div>
 
-<div class="box">
+<div class="project-card">
 <img src="tender.jpeg">
 <h4>📊 Lomba Tender Nasional</h4>
-<p>
-Menyusun RAB, BOQ, AHSP, kurva S, time schedule, dokumen penawaran tender, serta koordinasi tim.
-</p>
+<p>Menyusun RAB, BOQ, AHSP, kurva S, dan dokumen tender.</p>
 </div>
 
-<div class="box">
+<div class="project-card">
 <img src="kbgi.jpeg">
 <h4>🌉 KBGI / KJI 2024</h4>
-<p>
-Drafter AutoCAD desain jembatan untuk Kompetisi Bangunan Gedung Indonesia dan Kompetisi Jembatan Indonesia.
-</p>
+<p>Drafter AutoCAD desain jembatan kompetisi nasional.</p>
 </div>
 
-<div class="box">
+<div class="project-card">
 <img src="rumah 2 lantai.jpeg">
 <h4>🏠 Rumah 2 Lantai</h4>
-<p>
-Desain rumah 2 lantai menggunakan SketchUp serta penyusunan rencana anggaran biaya proyek.
-</p>
+<p>Desain rumah 2 lantai dan estimasi biaya proyek.</p>
 </div>
 
 </div>
@@ -433,40 +474,27 @@ Desain rumah 2 lantai menggunakan SketchUp serta penyusunan rencana anggaran bia
 <h2>Skill</h2>
 
 <div class="grid">
-
-<div class="box">
-<h4>Software</h4>
-<p>AutoCAD, ArcGIS, SketchUp, Microsoft Office, Excel, Google Workspace</p>
+<div class="box"><h4>Software</h4><p>AutoCAD, ArcGIS, SketchUp, Excel</p></div>
+<div class="box"><h4>Hard Skill</h4><p>RAB, BOQ, Distribusi Air, Pengawasan Lapangan</p></div>
+<div class="box"><h4>Soft Skill</h4><p>Leadership, Teamwork, Komunikasi</p></div>
 </div>
 
-<div class="box">
-<h4>Hard Skill</h4>
-<p>Distribusi Air, Estimasi Biaya, RAB, BOQ, Pengawasan Lapangan, Administrasi Proyek</p>
-</div>
-
-<div class="box">
-<h4>Soft Skill</h4>
-<p>Kerja Tim, Leadership, Problem Solving, Komunikasi, Manajemen Waktu</p>
-</div>
-
-</div>
 </section>
 
 <section class="card" id="achievement">
 <h2>Prestasi</h2>
 <ul style="padding-left:18px;">
-<li>Juara 1 Tender Nasional Universitas Gorontalo (2025)</li>
-<li>Juara 2 Tender Warriors Competition UNESA (2025)</li>
-<li>Harapan 2 Tender Nasional UMP (2025)</li>
-<li>Awardee Beasiswa Adaro 2024 & 2025</li>
+<li>Juara 1 Tender Nasional Universitas Gorontalo</li>
+<li>Juara 2 Tender Warriors Competition UNESA</li>
+<li>Harapan 2 Tender Nasional UMP</li>
+<li>Awardee Beasiswa Adaro</li>
 </ul>
 </section>
 
 <section class="card" id="org">
-<h2>Organisasi & Aktivitas</h2>
+<h2>Organisasi</h2>
 <ul style="padding-left:18px;">
-<li>HMDS ITS – Kepala Divisi Akademik & After Campus</li>
-<li>HMDS ITS – Staff Divisi Akademik</li>
+<li>HMDS ITS – Kepala Divisi Akademik</li>
 <li>Jamaah Masjid Al-Azhar ITS – Sekretaris</li>
 <li>Freelance MC dan Moderator</li>
 </ul>
@@ -475,15 +503,15 @@ Desain rumah 2 lantai menggunakan SketchUp serta penyusunan rencana anggaran bia
 <section class="card" id="contact">
 <h2>Kontak</h2>
 <p>Email: snhalimaah@gmail.com</p>
-<p>LinkedIn: linkedin.com/in/sitinurhalimaah</p>
 <p>Instagram: @halimahstn</p>
+<p>LinkedIn: linkedin.com/in/sitinurhalimaah</p>
 </section>
 
 </div>
 </div>
 
 <footer>
-© 2026 Siti Nur Halimah | Portfolio Website
+© 2026 Siti Nur Halimah
 </footer>
 
 </body>
