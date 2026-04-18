@@ -1,339 +1,476 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <title>Siti Nur Halimah | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siti Nur Halimah | Portfolio</title>
 
-  <style>
-    html { scroll-behavior: smooth; }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #1e2a38;
-      color: white;
-      padding-top: 60px;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    /* FIX SCROLL */
-    #about, #experience, #project, #contact {
-      scroll-margin-top: 90px;
-    }
+body{
+  font-family:'Segoe UI',sans-serif;
+  background:#1e2a38;
+  color:white;
+  line-height:1.6;
+}
 
-    /* NAVBAR */
-    nav {
-      position: fixed;
-      width: 100%;
-      background: rgba(0,0,0,0.6);
-      padding: 12px;
-      text-align: center;
-      backdrop-filter: blur(10px);
-      z-index: 1000;
-    }
+/* NAVBAR */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(0,0,0,0.65);
+  backdrop-filter:blur(10px);
+  z-index:999;
+  padding:14px 10px;
+  text-align:center;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:0 14px;
+  font-weight:600;
+  font-size:15px;
+}
 
-    nav a:hover { color: #00e5ff; }
+nav a:hover{
+  color:#00e5ff;
+}
 
-    /* HEADER */
-    .header-bg {
-      height: 300px;
-      background: url('header.jpeg') center no-repeat;
-      background-size: contain;
-      background-color: #1e2a38;
-    }
+/* HEADER */
+.header{
+  margin-top:55px;
+  height:320px;
+  background:url('header.jpeg') center center no-repeat;
+  background-size:contain;
+  background-color:#1e2a38;
+}
 
-    /* PROFILE */
-    .profile-section {
-      max-width: 1000px;
-      margin: auto;
-      margin-top: -30px; /* lebih turun dari sebelumnya */
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      padding: 20px;
-      animation: fadeUp 1s ease;
-    }
+/* PROFILE */
+.profile-wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:0 25px;
+}
 
-    .profile {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid #1e2a38;
-    }
+.profile-box{
+  display:flex;
+  align-items:flex-start;
+  gap:30px;
+  margin-top:-65px;
+}
 
-    .profile-info {
-      margin-top: 20px;
-      text-align: left;
-    }
+.profile-img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid #1e2a38;
+}
 
-    .profile-info h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+.profile-info{
+  padding-top:40px;
+}
 
-    .profile-info p {
-      margin: 5px 0;
-      opacity: 0.85;
-    }
+.profile-info h1{
+  font-size:48px;
+  margin-bottom:6px;
+}
 
-    .desc {
-      margin-top: 10px;
-      font-size: 14px;
-      line-height: 1.6;
-    }
+.tagline{
+  color:#cfd8dc;
+  font-size:20px;
+  margin-bottom:10px;
+}
 
-    .social a {
-      margin-right: 10px;
-      padding: 6px 12px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 6px;
-      text-decoration: none;
-      color: white;
-      font-size: 13px;
-    }
+.desc{
+  max-width:800px;
+  color:#e0e0e0;
+  font-size:15px;
+  margin-bottom:16px;
+}
 
-    /* CONTENT */
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px;
-    }
+.social a{
+  display:inline-block;
+  padding:9px 14px;
+  background:#314255;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  margin-right:8px;
+  margin-bottom:8px;
+  font-size:14px;
+}
 
-    .card {
-      background: rgba(255,255,255,0.05);
-      padding: 25px;
-      margin-bottom: 25px;
-      border-radius: 12px;
-      backdrop-filter: blur(10px);
-      animation: fadeUp 1s ease;
-      text-align: left;
-    }
+.social a:hover{
+  background:#00e5ff;
+  color:#1e2a38;
+}
 
-    h2 {
-      border-left: 4px solid #00e5ff;
-      padding-left: 10px;
-    }
+/* CONTENT */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 25px 60px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 20px;
-      background: #00e5ff;
-      color: #1e2a38;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.card{
+  background:#2a3a4d;
+  border-radius:16px;
+  padding:28px;
+  margin-bottom:25px;
+}
 
-    /* EXPERIENCE */
-    .exp {
-      margin-top: 20px;
-      border-left: 3px solid #00e5ff;
-      padding-left: 15px;
-    }
+.card h2{
+  font-size:32px;
+  margin-bottom:18px;
+  border-left:5px solid #00e5ff;
+  padding-left:12px;
+}
 
-    .exp h3 {
-      margin-bottom: 5px;
-      font-size: 18px;
-    }
+.timeline{
+  border-left:3px solid #00e5ff;
+  padding-left:18px;
+  margin-bottom:20px;
+}
 
-    .date {
-      font-size: 13px;
-      opacity: 0.7;
-    }
+.timeline h3{
+  font-size:22px;
+}
 
-    .exp ul {
-      margin-top: 10px;
-      padding-left: 18px;
-    }
+.date{
+  font-size:13px;
+  color:#b0bec5;
+  margin-bottom:10px;
+  display:block;
+}
 
-    .exp li {
-      margin-bottom: 8px;
-      line-height: 1.6;
-    }
+.timeline ul{
+  padding-left:20px;
+}
 
-    /* PROJECT */
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
+.timeline li{
+  margin-bottom:7px;
+}
 
-    .project-card img {
-      width: 100%;
-      height: 90%;
-      object-fit: cover;
-      border-radius: 20px;
-    }
+/* SKILLS */
+.skill-wrap{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      opacity: 0.6;
-    }
+.skill-box{
+  background:#314255;
+  padding:18px;
+  border-radius:12px;
+}
 
-    /* ANIMATION */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.skill-box h4{
+  margin-bottom:10px;
+  color:#00e5ff;
+}
 
-    /* MOBILE */
-    @media (max-width: 768px) {
+/* PROJECT */
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px;
+}
 
-      .profile-section {
-        flex-direction: column;
-        text-align: center;
-      }
+.project{
+  background:#314255;
+  border-radius:14px;
+  overflow:hidden;
+}
 
-      .profile { width: 120px; height: 120px; }
+.project img{
+  width:100%;
+  height:190px;
+  object-fit:cover;
+}
 
-      .profile-info {
-        text-align: center;
-        margin-top: 10px;
-      }
+.project-content{
+  padding:15px;
+}
 
-      .header-bg { height: 200px; }
+.project-content h4{
+  margin-bottom:8px;
+}
 
-      .exp h3 { font-size: 16px; }
-      .exp li { font-size: 14px; }
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#b0bec5;
+}
 
-    }
-  </style>
+/* MOBILE */
+@media(max-width:768px){
+
+nav a{
+  margin:0 8px;
+  font-size:13px;
+}
+
+.header{
+  height:180px;
+}
+
+.profile-box{
+  flex-direction:column;
+  align-items:center;
+  margin-top:-40px;
+  text-align:center;
+}
+
+.profile-img{
+  width:130px;
+  height:130px;
+}
+
+.profile-info{
+  padding-top:0;
+}
+
+.profile-info h1{
+  font-size:30px;
+}
+
+.tagline{
+  font-size:16px;
+}
+
+.card h2{
+  font-size:24px;
+}
+
+.timeline h3{
+  font-size:18px;
+}
+
+}
+</style>
 </head>
 
 <body>
 
 <nav>
-  <a href="#about">Tentang</a>
-  <a href="#experience">Pengalaman</a>
-  <a href="#project">Proyek</a>
-  <a href="#contact">Kontak</a>
+<a href="#about">Tentang</a>
+<a href="#education">Pendidikan</a>
+<a href="#experience">Pengalaman</a>
+<a href="#project">Proyek</a>
+<a href="#skill">Skill</a>
+<a href="#achievement">Prestasi</a>
+<a href="#org">Organisasi</a>
+<a href="#contact">Kontak</a>
 </nav>
 
-<div class="header-bg"></div>
+<div class="header"></div>
 
-<div class="profile-section">
-  <img src="profile.jpeg" class="profile">
+<div class="profile-wrap">
+<div class="profile-box">
 
-  <div class="profile-info">
-    <h1>Siti Nur Halimah</h1>
-    <p>💧 Infrastruktur Air | 🏗️ Manajemen Proyek | 🏢 Konstruksi</p>
+<img src="profile.jpeg" class="profile-img">
 
-    <p class="desc">
-      Mahasiswa tingkat akhir Teknik Infrastruktur Sipil ITS dengan pengalaman dalam analisis distribusi air, tekanan jaringan, serta quality control konstruksi.
-    </p>
+<div class="profile-info">
+<h1>Siti Nur Halimah</h1>
 
-    <div class="social">
-      <a href="https://linkedin.com/in/sitinurhalimaah">LinkedIn</a>
-      <a href="https://instagram.com/halimahstn">Instagram</a>
-      <a href="mailto:snhalimaah@gmail.com">Email</a>
-    </div>
-  </div>
+<p class="tagline">
+💧 Water Infrastructure | 🏗️ Project Management | 🏢 Construction
+</p>
+
+<p class="desc">
+Mahasiswa tingkat akhir Teknik Infrastruktur Sipil Institut Teknologi Sepuluh Nopember dengan pengalaman di bidang distribusi air, quality control konstruksi, estimasi biaya proyek, serta manajemen pelaksanaan pekerjaan lapangan. :contentReference[oaicite:0]{index=0}
+</p>
+
+<div class="social">
+<a href="https://linkedin.com/in/sitinurhalimaah" target="_blank">LinkedIn</a>
+<a href="https://instagram.com/halimahstn" target="_blank">Instagram</a>
+<a href="mailto:snhalimaah@gmail.com">Email</a>
+<a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank">CV & Portfolio</a>
+</div>
+
+</div>
+</div>
 </div>
 
 <div class="container">
 
-  <div class="card" id="about">
-    <h2>Tentang Saya</h2>
-    <p>
-      Memiliki minat kuat dalam bidang infrastruktur air, khususnya pada analisis hidrolika, tekanan, dan optimasi jaringan distribusi air.
-      Berpengalaman dalam analisis sistem distribusi berbasis data serta pengendalian mutu konstruksi.
-    </p>
-  </div>
+<!-- ABOUT -->
+<div class="card" id="about">
+<h2>Tentang Saya</h2>
+<p>
+Memiliki minat kuat pada pengembangan infrastruktur air, sistem distribusi perpipaan, hidrolika, estimasi biaya, serta pelaksanaan konstruksi bangunan gedung. Terbiasa bekerja secara detail, kolaboratif, dan adaptif dalam tim proyek. :contentReference[oaicite:1]{index=1}
+</p>
+</div>
 
-  <div class="card" id="education">
-  <h2>Pendidikan</h2>
+<!-- EDUCATION -->
+<div class="card" id="education">
+<h2>Pendidikan</h2>
 
-  <div class="exp">
-    <h3>🎓 Institut Teknologi Sepuluh Nopember (ITS)</h3>
-    <span class="date">2022 – Sekarang</span>
-    <ul>
-      <li>D4 Teknologi Rekayasa Konstruksi Bangunan Air</li>
-      <li>Fokus pada infrastruktur air, hidrolika, dan sistem distribusi air</li>
-    </ul>
-  </div>
+<div class="timeline">
+<h3>🎓 Institut Teknologi Sepuluh Nopember (ITS)</h3>
+<span class="date">2022 – 2026 (Expected)</span>
+<ul>
+<li>D4 Teknik Infrastruktur Sipil</li>
+<li>Fokus: Infrastruktur Air, Hidrolika, Sistem Distribusi Air</li>
+</ul>
+</div>
 
-  <div class="exp">
-    <h3>🏫 SMK Negeri 26 Jakarta</h3>
-    <span class="date">2018 – 2022</span>
-    <ul>
-      <li>Konstruksi Gedung, Sanitasi, dan Perawatan</li>
-      <li>Mempelajari dasar konstruksi, gambar teknik, dan pekerjaan lapangan</li>
-    </ul>
-  </div>
+<div class="timeline">
+<h3>🏫 SMK Negeri 26 Jakarta</h3>
+<span class="date">2018 – 2022</span>
+<ul>
+<li>Konstruksi Gedung, Sanitasi, dan Perawatan</li>
+</ul>
+</div>
 
 </div>
 
-  <div class="card">
-    <h2>Portofolio & CV</h2>
-    <a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank" class="btn">
-      📂 Lihat Portofolio & CV
-    </a>
-  </div>
+<!-- EXPERIENCE -->
+<div class="card" id="experience">
+<h2>Pengalaman Magang</h2>
 
-  <div class="card" id="experience">
-    <h2>Pengalaman Magang</h2>
+<div class="timeline">
+<h3>💧 PT PAM JAYA – Distribusi Air Regional Timur</h3>
+<span class="date">Juli – Desember 2025</span>
+<ul>
+<li>Monitoring tekanan dan debit jaringan distribusi air berbasis data real-time</li>
+<li>Analisis kebocoran, tekanan rendah, dan gangguan aliran</li>
+<li>Pemetaan jaringan menggunakan ArcGIS, CarryMap, dan Google Earth</li>
+<li>Flushing, pengecekan valve, serta administrasi data teknis</li>
+<li>Evaluasi zona kritis untuk optimasi distribusi air</li>
+</ul>
+</div>
 
-    <div class="exp">
-      <h3>💧 PT PAM JAYA</h3>
-      <span class="date">2025</span>
-      <ul>
-        <li>Monitoring tekanan & debit jaringan distribusi air</li>
-        <li>Analisis kebocoran dan tekanan rendah</li>
-        <li>Pemetaan jaringan menggunakan ArcGIS</li>
-        <li>Flushing dan pengecekan valve</li>
-      </ul>
-    </div>
+<div class="timeline">
+<h3>🏗️ PT Wijaya Karya Bangunan Gedung Tbk</h3>
+<span class="date">April 2021 – Februari 2022</span>
+<ul>
+<li>Checklist defect pekerjaan arsitektur dan finishing</li>
+<li>Support quality assurance bersama konsultan</li>
+<li>Perhitungan volume pekerjaan dari shop drawing</li>
+<li>Laporan progres mingguan proyek</li>
+<li>Administrasi proyek struktur, arsitektur, dan MEP</li>
+</ul>
+</div>
 
-    <div class="exp">
-      <h3>🏗️ PT WIKA Gedung</h3>
-      <span class="date">2021 – 2022</span>
-      <ul>
-        <li>Quality control pekerjaan konstruksi</li>
-        <li>Perhitungan volume pekerjaan</li>
-        <li>Penyusunan laporan proyek</li>
-      </ul>
-    </div>
+</div>
 
-  </div>
+<!-- PROJECT -->
+<div class="card" id="project">
+<h2>Proyek</h2>
 
-  <div class="card" id="project">
-    <h2>Proyek</h2>
+<div class="project-grid">
 
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="proter.jpeg">
-        <p><b>Irigasi Tarum</b></p>
-      </div>
+<div class="project">
+<img src="proter.jpeg">
+<div class="project-content">
+<h4>Irigasi Tarum Utara Barat</h4>
+<p>
+Analisis sedimentasi, evaluasi hidrolika, desain pelebaran saluran, RAB, dan solusi teknis. Best Student Capstone Project 2025. :contentReference[oaicite:2]{index=2}
+</p>
+</div>
+</div>
 
-      <div class="project-card">
-        <img src="drainase.jpeg">
-        <p><b>Drainase</b></p>
-      </div>
+<div class="project">
+<img src="drainase.jpeg">
+<div class="project-content">
+<h4>Drainase Lembah Harapan Surabaya</h4>
+<p>
+Analisis hidrologi, hidrolika, elevasi saluran, desain dimensi saluran, kolam detensi, RAB dan RKS. :contentReference[oaicite:3]{index=3}
+</p>
+</div>
+</div>
 
-      <div class="project-card">
-        <img src="tender.jpeg">
-        <p><b>Tender</b></p>
-      </div>
-    </div>
+<div class="project">
+<img src="tender.jpeg">
+<div class="project-content">
+<h4>Lomba Tender Nasional</h4>
+<p>
+Menyusun RAB, BOQ, AHSP, kurva S, time schedule, dan dokumen penawaran tender. :contentReference[oaicite:4]{index=4}
+</p>
+</div>
+</div>
 
-  </div>
+</div>
+</div>
 
-  <div class="card" id="contact">
-    <h2>Kontak</h2>
-    <p>Email: snhalimaah@gmail.com</p>
-  </div>
+<!-- SKILL -->
+<div class="card" id="skill">
+<h2>Skill</h2>
+
+<div class="skill-wrap">
+
+<div class="skill-box">
+<h4>Software</h4>
+<p>AutoCAD, ArcGIS, SketchUp, Excel, Microsoft Office, Google Workspace</p>
+</div>
+
+<div class="skill-box">
+<h4>Teknis</h4>
+<p>Distribusi Air, Estimasi Biaya, RAB, BOQ, Pengawasan Lapangan, Administrasi Proyek</p>
+</div>
+
+<div class="skill-box">
+<h4>Soft Skill</h4>
+<p>Leadership, Teamwork, Problem Solving, Komunikasi, Manajemen Waktu</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- ACHIEVEMENT -->
+<div class="card" id="achievement">
+<h2>Prestasi</h2>
+
+<ul>
+<li>Juara 1 Tender Nasional Universitas Gorontalo (2025)</li>
+<li>Juara 2 Tender Warriors Competition UNESA (2025)</li>
+<li>Harapan 2 Tender Nasional UMP (2025)</li>
+<li>Awardee Beasiswa Adaro 2024 & 2025</li>
+</ul>
+
+</div>
+
+<!-- ORGANIZATION -->
+<div class="card" id="org">
+<h2>Organisasi & Aktivitas</h2>
+
+<ul>
+<li>HMDS ITS – Kepala Divisi Akademik & After Campus</li>
+<li>Jamaah Masjid Al-Azhar ITS – Sekretaris</li>
+<li>Freelance MC & Moderator (2024–2026)</li>
+</ul>
+
+</div>
+
+<!-- CONTACT -->
+<div class="card" id="contact">
+<h2>Kontak</h2>
+
+<p>Email: snhalimaah@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/sitinurhalimaah</p>
+<p>Instagram: @halimahstn</p>
+
+</div>
 
 </div>
 
 <footer>
-  © 2026 Siti Nur Halimah
+© 2026 Siti Nur Halimah | Portfolio Website
 </footer>
 
 </body>
