@@ -6,228 +6,245 @@
 <title>Siti Nur Halimah | Portfolio</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
-font-family:'Segoe UI',sans-serif;
-background:#1e2a38;
-color:white;
-line-height:1.6;
+  font-family:'Segoe UI',sans-serif;
+  background:#1e2a38;
+  color:white;
+  line-height:1.6;
 }
 
 /* NAVBAR */
 nav{
-position:fixed;
-top:0;
-width:100%;
-padding:14px;
-text-align:center;
-background:rgba(0,0,0,.72);
-backdrop-filter:blur(10px);
-z-index:999;
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:14px;
+  text-align:center;
+  background:rgba(0,0,0,.72);
+  backdrop-filter:blur(10px);
+  z-index:999;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:0 14px;
-font-weight:600;
-font-size:15px;
+  color:white;
+  text-decoration:none;
+  margin:0 14px;
+  font-weight:600;
+  font-size:15px;
 }
 
-nav a:hover{color:#00e5ff;}
+nav a:hover{
+  color:#00e5ff;
+}
 
-section{scroll-margin-top:95px;}
+section{
+  scroll-margin-top:95px;
+}
+
+/* WRAP */
+.wrap{
+  max-width:1150px;
+  margin:auto;
+  padding:0 25px;
+}
 
 /* HEADER */
 .banner{
-margin-top:55px;
-height:400px;
-background:url('header.jpeg') center center no-repeat;
-background-size:cover;
+  margin-top:55px;
+  height:360px;
+  background:url('header.jpeg') center center no-repeat;
+  background-size:cover;
+  border-radius:0 0 14px 14px;
 }
 
 /* HERO */
 .hero{
-display:flex;
-gap:35px;
-align-items:flex-start;
-margin-top:-95px;
-padding:0 28px 30px;
-background:none;
-box-shadow:none;
+  display:flex;
+  gap:35px;
+  align-items:flex-start;
+  margin-top:-90px;
+  padding:0 28px 25px;
 }
 
 .photo{
-width:190px;
-height:190px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #1e2a38;
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid #1e2a38;
+  flex-shrink:0;
 }
 
 .info{
-padding-top:70px;
+  padding-top:78px;
+  flex:1;
 }
 
 .info h1{
-font-size:72px;
-line-height:1;
-margin-bottom:18px;
+  font-size:64px;
+  line-height:1;
+  margin-bottom:16px;
 }
 
 .tag{
-font-size:21px;
-color:#d8dee4;
-margin-bottom:10px;
+  font-size:22px;
+  color:#eef3f7;
+  margin-bottom:14px;
 }
 
 .desc{
-font-size:16px;
-max-width:800px;
-margin-bottom:15px;
-color:#edf1f5;
+  font-size:16px;
+  line-height:1.8;
+  max-width:860px;
+  margin-bottom:18px;
+  color:#f0f4f7;
 }
 
 .btns a{
-display:inline-block;
-padding:9px 14px;
-margin:5px 8px 0 0;
-background:#314255;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-size:14px;
+  display:inline-block;
+  padding:10px 16px;
+  background:#314255;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  margin-right:10px;
+  margin-top:8px;
+  font-size:14px;
 }
 
 .btns a:hover{
-background:#00e5ff;
-color:#1e2a38;
+  background:#00e5ff;
+  color:#1e2a38;
 }
 
-/* CARD */
-.content{padding:30px 0 60px;}
+/* CONTENT */
+.content{
+  padding:25px 0 60px;
+}
 
 .card{
-background:#2a3a4d;
-border-radius:16px;
-padding:28px;
-margin-bottom:22px;
+  background:#2a3a4d;
+  border-radius:16px;
+  padding:28px;
+  margin-bottom:22px;
 }
 
 .card h2{
-font-size:30px;
-margin-bottom:18px;
-border-left:5px solid #00e5ff;
-padding-left:12px;
+  font-size:30px;
+  margin-bottom:18px;
+  border-left:5px solid #00e5ff;
+  padding-left:12px;
 }
 
 .timeline{
-border-left:3px solid #00e5ff;
-padding-left:18px;
-margin-bottom:20px;
+  border-left:3px solid #00e5ff;
+  padding-left:18px;
+  margin-bottom:22px;
 }
 
 .timeline h3{
-font-size:21px;
-margin-bottom:5px;
+  font-size:21px;
+  margin-bottom:5px;
 }
 
 .date{
-font-size:13px;
-color:#b7c3cc;
-display:block;
-margin-bottom:10px;
+  font-size:13px;
+  color:#b7c3cc;
+  display:block;
+  margin-bottom:10px;
 }
 
 .timeline ul{
-padding-left:18px;
+  padding-left:18px;
 }
 
 .timeline li{
-margin-bottom:8px;
+  margin-bottom:8px;
 }
 
-/* GRID */
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:18px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:18px;
 }
 
 .box{
-background:#314255;
-padding:18px;
-border-radius:14px;
+  background:#314255;
+  padding:18px;
+  border-radius:14px;
 }
 
 .box h4{
-margin-bottom:10px;
-color:#00e5ff;
+  color:#00e5ff;
+  margin-bottom:10px;
 }
 
-/* FOOTER */
 footer{
-text-align:center;
-padding:30px;
-color:#aab5be;
+  text-align:center;
+  padding:30px;
+  color:#aab5be;
 }
 
 /* MOBILE */
 @media(max-width:768px){
 
 nav a{
-font-size:12px;
-margin:0 7px;
+  font-size:12px;
+  margin:0 7px;
 }
 
 .banner{
-height:220px;
+  height:220px;
 }
 
 .hero{
-flex-direction:column;
-align-items:center;
-text-align:center;
-margin-top:-55px;
-padding:0 15px 25px;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  margin-top:-55px;
+  padding:0 15px 25px;
 }
 
 .photo{
-width:135px;
-height:135px;
+  width:135px;
+  height:135px;
 }
 
 .info{
-padding-top:0;
+  padding-top:0;
 }
 
 .info h1{
-font-size:36px;
-line-height:1.2;
+  font-size:36px;
+  line-height:1.2;
 }
 
 .tag{
-font-size:16px;
+  font-size:16px;
 }
 
 .desc{
-font-size:14px;
+  font-size:14px;
+  line-height:1.7;
 }
 
 .card h2{
-font-size:24px;
+  font-size:24px;
 }
 
 .timeline h3{
-font-size:18px;
+  font-size:18px;
 }
-
-.tag{font-size:16px;}
-.desc{font-size:14px;}
-
-.card h2{font-size:24px;}
-.timeline h3{font-size:18px;}
 
 }
 </style>
@@ -246,11 +263,10 @@ font-size:18px;
 <a href="#contact">Kontak</a>
 </nav>
 
-<div class="banner"></div>
-
 <div class="wrap">
 
-<!-- HERO -->
+<div class="banner"></div>
+
 <div class="hero">
 
 <img src="profile.jpeg" class="photo">
@@ -263,7 +279,7 @@ font-size:18px;
 </p>
 
 <p class="desc">
-Mahasiswa tingkat akhir Teknik Infrastruktur Sipil Institut Teknologi Sepuluh Nopember dengan pengalaman dalam distribusi air, quality control konstruksi, estimasi biaya proyek, dan koordinasi lapangan. Aktif dalam organisasi, kompetisi, dan pengembangan kepemimpinan. :contentReference[oaicite:0]{index=0}
+Mahasiswa tingkat akhir Teknik Infrastruktur Sipil Institut Teknologi Sepuluh Nopember dengan pengalaman dalam distribusi air, quality control konstruksi, estimasi biaya proyek, dan koordinasi lapangan. Aktif dalam organisasi, kompetisi, dan pengembangan kepemimpinan.
 </p>
 
 <div class="btns">
@@ -278,15 +294,13 @@ Mahasiswa tingkat akhir Teknik Infrastruktur Sipil Institut Teknologi Sepuluh No
 
 <div class="content">
 
-<!-- ABOUT -->
 <section class="card" id="about">
 <h2>Tentang Saya</h2>
 <p>
-Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan pelaksanaan konstruksi. Berpengalaman dalam analisis sistem distribusi air, deteksi kebocoran, pemantauan debit dan tekanan, optimasi jaringan perpipaan, quality control, estimasi kuantitas material, dan koordinasi lapangan. :contentReference[oaicite:1]{index=1}
+Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan pelaksanaan konstruksi. Berpengalaman dalam analisis sistem distribusi air, deteksi kebocoran, pemantauan debit dan tekanan, optimasi jaringan perpipaan, quality control, estimasi kuantitas material, dan koordinasi lapangan.
 </p>
 </section>
 
-<!-- EDUCATION -->
 <section class="card" id="education">
 <h2>Pendidikan</h2>
 
@@ -309,7 +323,6 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 
 </section>
 
-<!-- EXPERIENCE -->
 <section class="card" id="experience">
 <h2>Pengalaman Magang</h2>
 
@@ -339,7 +352,6 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 
 </section>
 
-<!-- PROJECT -->
 <section class="card" id="project">
 <h2>Proyek</h2>
 
@@ -347,43 +359,32 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 
 <div class="box">
 <h4>🏆 Proyek Terintegrasi 2025</h4>
-<p>
-Pemulihan saluran irigasi Tarum Utara Barat akibat erosi & sedimentasi. Meliputi analisis sedimentasi, evaluasi hidrolika, solusi teknis, RAB, dan mitigasi lingkungan. Best Student Capstone Project. :contentReference[oaicite:2]{index=2}
-</p>
+<p>Pemulihan saluran irigasi Tarum Utara Barat akibat erosi & sedimentasi. Analisis sedimentasi, evaluasi hidrolika, solusi teknis, RAB, dan mitigasi lingkungan.</p>
 </div>
 
 <div class="box">
 <h4>🌧️ Drainase Lembah Harapan</h4>
-<p>
-Analisis hidrologi, hidrolika, elevasi saluran, desain dimensi saluran, kolam detensi, RAB, dan RKS untuk mengatasi genangan. :contentReference[oaicite:3]{index=3}
-</p>
+<p>Analisis hidrologi, hidrolika, elevasi saluran, desain dimensi saluran, kolam detensi, RAB, dan RKS untuk mengatasi genangan.</p>
 </div>
 
 <div class="box">
 <h4>📊 Lomba Tender Nasional</h4>
-<p>
-Menyusun RAB, BOQ, AHSP, kurva S, time schedule, dokumen penawaran tender, dan koordinasi tim. :contentReference[oaicite:4]{index=4}
-</p>
+<p>Menyusun RAB, BOQ, AHSP, kurva S, time schedule, dokumen penawaran tender, dan koordinasi tim.</p>
 </div>
 
 <div class="box">
 <h4>🌉 AutoCAD Jembatan KJI 2024</h4>
-<p>
-Drafter desain jembatan untuk Kompetisi Jembatan Indonesia (KJI/KBGI 2024). :contentReference[oaicite:5]{index=5}
-</p>
+<p>Drafter desain jembatan untuk Kompetisi Jembatan Indonesia.</p>
 </div>
 
 <div class="box">
 <h4>🏠 SketchUp Rumah 2 Lantai</h4>
-<p>
-Desain rumah 2 lantai dan perhitungan rencana anggaran biaya. :contentReference[oaicite:6]{index=6}
-</p>
+<p>Desain rumah 2 lantai dan perhitungan rencana anggaran biaya.</p>
 </div>
 
 </div>
 </section>
 
-<!-- SKILL -->
 <section class="card" id="skill">
 <h2>Skill</h2>
 
@@ -407,40 +408,31 @@ Desain rumah 2 lantai dan perhitungan rencana anggaran biaya. :contentReference[
 </div>
 </section>
 
-<!-- ACHIEVEMENT -->
 <section class="card" id="achievement">
 <h2>Prestasi</h2>
-
 <ul style="padding-left:18px;">
 <li>Juara 1 Tender Nasional Universitas Gorontalo (2025)</li>
 <li>Juara 2 Tender Warriors Competition UNESA (2025)</li>
 <li>Harapan 2 Tender Nasional UMP (2025)</li>
 <li>Awardee Beasiswa Adaro 2024 & 2025</li>
 </ul>
-
 </section>
 
-<!-- ORGANIZATION -->
 <section class="card" id="org">
 <h2>Organisasi & Aktivitas</h2>
-
 <ul style="padding-left:18px;">
-<li>HMDS ITS – Kepala Divisi Akademik & After Campus (2025)</li>
-<li>HMDS ITS – Staff Divisi Akademik (2024)</li>
-<li>Jamaah Masjid Al-Azhar ITS – Sekretaris 1 & 2</li>
-<li>Freelance MC dan Moderator (2024–2026)</li>
+<li>HMDS ITS – Kepala Divisi Akademik & After Campus</li>
+<li>HMDS ITS – Staff Divisi Akademik</li>
+<li>Jamaah Masjid Al-Azhar ITS – Sekretaris</li>
+<li>Freelance MC dan Moderator</li>
 </ul>
-
 </section>
 
-<!-- CONTACT -->
 <section class="card" id="contact">
 <h2>Kontak</h2>
-
 <p>Email: snhalimaah@gmail.com</p>
 <p>LinkedIn: linkedin.com/in/sitinurhalimaah</p>
 <p>Instagram: @halimahstn</p>
-
 </section>
 
 </div>
