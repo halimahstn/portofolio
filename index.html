@@ -7,243 +7,271 @@
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:'Segoe UI',sans-serif;
-  background:#1e2a38;
-  color:white;
-  line-height:1.6;
+font-family:'Segoe UI',sans-serif;
+background:#1e2a38;
+color:white;
+line-height:1.7;
 }
 
 /* NAVBAR */
 nav{
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:14px;
-  text-align:center;
-  background:rgba(0,0,0,.72);
-  backdrop-filter:blur(10px);
-  z-index:999;
+position:fixed;
+top:0;
+width:100%;
+padding:14px;
+text-align:center;
+background:rgba(0,0,0,.72);
+backdrop-filter:blur(10px);
+z-index:999;
 }
 
 nav a{
-  color:white;
-  text-decoration:none;
-  margin:0 14px;
-  font-weight:600;
-  font-size:15px;
+color:white;
+text-decoration:none;
+margin:0 14px;
+font-weight:600;
+font-size:15px;
 }
 
 nav a:hover{
-  color:#00e5ff;
+color:#00e5ff;
 }
 
 section{
-  scroll-margin-top:95px;
+scroll-margin-top:95px;
 }
 
 /* WRAP */
 .wrap{
-  max-width:1150px;
-  margin:auto;
-  padding:0 25px;
+max-width:1200px;
+margin:auto;
+padding:0 22px;
 }
 
 /* HEADER */
 .banner{
-  margin-top:55px;
-  height:360px;
-  background:url('header.jpeg') center center no-repeat;
-  background-size:cover;
-  border-radius:0 0 14px 14px;
+margin-top:55px;
+height:360px;
+background:url('header.jpeg') center center no-repeat;
+background-size:cover;
+border-radius:0 0 14px 14px;
 }
 
 /* HERO */
 .hero{
-  display:flex;
-  gap:35px;
-  align-items:flex-start;
-  margin-top:-90px;
-  padding:0 28px 25px;
+display:flex;
+gap:35px;
+align-items:flex-start;
+margin-top:-90px;
+padding:0 20px 25px;
 }
 
 .photo{
-  width:190px;
-  height:190px;
-  border-radius:50%;
-  object-fit:cover;
-  border:6px solid #1e2a38;
-  flex-shrink:0;
+width:190px;
+height:190px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #1e2a38;
+flex-shrink:0;
 }
 
 .info{
-  padding-top:78px;
-  flex:1;
+padding-top:78px;
+flex:1;
 }
 
 .info h1{
-  font-size:64px;
-  line-height:1;
-  margin-bottom:16px;
+font-size:64px;
+line-height:1;
+margin-bottom:16px;
 }
 
 .tag{
-  font-size:22px;
-  color:#eef3f7;
-  margin-bottom:14px;
+font-size:22px;
+color:#eef3f7;
+margin-bottom:14px;
 }
 
 .desc{
-  font-size:16px;
-  line-height:1.8;
-  max-width:860px;
-  margin-bottom:18px;
-  color:#f0f4f7;
+font-size:16px;
+line-height:1.8;
+max-width:850px;
+margin-bottom:18px;
+color:#f0f4f7;
 }
 
 .btns a{
-  display:inline-block;
-  padding:10px 16px;
-  background:#314255;
-  color:white;
-  text-decoration:none;
-  border-radius:10px;
-  margin-right:10px;
-  margin-top:8px;
-  font-size:14px;
+display:inline-block;
+padding:10px 16px;
+background:#314255;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-right:10px;
+margin-top:8px;
+font-size:14px;
 }
 
 .btns a:hover{
-  background:#00e5ff;
-  color:#1e2a38;
+background:#00e5ff;
+color:#1e2a38;
 }
 
 /* CONTENT */
 .content{
-  padding:25px 0 60px;
+padding:25px 0 60px;
 }
 
 .card{
-  background:#2a3a4d;
-  border-radius:16px;
-  padding:28px;
-  margin-bottom:22px;
+background:#2a3a4d;
+border-radius:18px;
+padding:30px;
+margin-bottom:24px;
 }
 
 .card h2{
-  font-size:30px;
-  margin-bottom:18px;
-  border-left:5px solid #00e5ff;
-  padding-left:12px;
+font-size:32px;
+margin-bottom:20px;
+border-left:5px solid #00e5ff;
+padding-left:12px;
 }
 
 .timeline{
-  border-left:3px solid #00e5ff;
-  padding-left:18px;
-  margin-bottom:22px;
+border-left:3px solid #00e5ff;
+padding-left:18px;
+margin-bottom:24px;
 }
 
 .timeline h3{
-  font-size:21px;
-  margin-bottom:5px;
+font-size:21px;
+margin-bottom:5px;
 }
 
 .date{
-  font-size:13px;
-  color:#b7c3cc;
-  display:block;
-  margin-bottom:10px;
+font-size:13px;
+color:#b7c3cc;
+display:block;
+margin-bottom:10px;
 }
 
 .timeline ul{
-  padding-left:18px;
+padding-left:18px;
 }
 
 .timeline li{
-  margin-bottom:8px;
+margin-bottom:8px;
 }
 
+/* GRID */
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:18px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
 }
 
 .box{
-  background:#314255;
-  padding:18px;
-  border-radius:14px;
+background:#314255;
+padding:20px;
+border-radius:16px;
+}
+
+.box img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:14px;
 }
 
 .box h4{
-  color:#00e5ff;
-  margin-bottom:10px;
+color:#00e5ff;
+font-size:20px;
+margin-bottom:12px;
 }
 
 footer{
-  text-align:center;
-  padding:30px;
-  color:#aab5be;
+text-align:center;
+padding:30px;
+color:#b8c2cc;
 }
 
 /* MOBILE */
 @media(max-width:768px){
 
+nav{
+padding:12px 8px;
+overflow-x:auto;
+white-space:nowrap;
+}
+
 nav a{
-  font-size:12px;
-  margin:0 7px;
+font-size:13px;
+margin:0 8px;
 }
 
 .banner{
-  height:220px;
+height:220px;
 }
 
 .hero{
-  flex-direction:column;
-  align-items:center;
-  text-align:center;
-  margin-top:-55px;
-  padding:0 15px 25px;
+flex-direction:column;
+align-items:center;
+text-align:center;
+margin-top:-55px;
+padding:0 12px 20px;
 }
 
 .photo{
-  width:135px;
-  height:135px;
+width:135px;
+height:135px;
 }
 
 .info{
-  padding-top:0;
+padding-top:0;
 }
 
 .info h1{
-  font-size:36px;
-  line-height:1.2;
+font-size:36px;
+line-height:1.2;
 }
 
 .tag{
-  font-size:16px;
+font-size:16px;
 }
 
 .desc{
-  font-size:14px;
-  line-height:1.7;
+font-size:14px;
+line-height:1.7;
+}
+
+.card{
+padding:22px;
 }
 
 .card h2{
-  font-size:24px;
+font-size:25px;
 }
 
 .timeline h3{
-  font-size:18px;
+font-size:18px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.box img{
+height:210px;
 }
 
 }
@@ -272,6 +300,7 @@ nav a{
 <img src="profile.jpeg" class="photo">
 
 <div class="info">
+
 <h1>Siti Nur Halimah</h1>
 
 <p class="tag">
@@ -286,7 +315,7 @@ Mahasiswa tingkat akhir Teknik Infrastruktur Sipil Institut Teknologi Sepuluh No
 <a href="https://linkedin.com/in/sitinurhalimaah" target="_blank">LinkedIn</a>
 <a href="https://instagram.com/halimahstn" target="_blank">Instagram</a>
 <a href="mailto:snhalimaah@gmail.com">Email</a>
-<a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank">CV & PDF</a>
+<a href="https://drive.google.com/drive/folders/1kCD7NJn7245YGk4tyakgfhWU267YxSTm" target="_blank">CV & Portfolio</a>
 </div>
 
 </div>
@@ -358,28 +387,43 @@ Memiliki minat kuat pada pengembangan infrastruktur air, manajemen proyek, dan p
 <div class="grid">
 
 <div class="box">
+<img src="proter.jpeg">
 <h4>🏆 Proyek Terintegrasi 2025</h4>
-<p>Pemulihan saluran irigasi Tarum Utara Barat akibat erosi & sedimentasi. Analisis sedimentasi, evaluasi hidrolika, solusi teknis, RAB, dan mitigasi lingkungan.</p>
+<p>
+Pemulihan saluran irigasi Tarum Utara Barat akibat erosi dan sedimentasi. Meliputi analisis sedimentasi, evaluasi hidrolika, solusi teknis, RAB, dan mitigasi lingkungan.
+</p>
 </div>
 
 <div class="box">
+<img src="drainase.jpeg">
 <h4>🌧️ Drainase Lembah Harapan</h4>
-<p>Analisis hidrologi, hidrolika, elevasi saluran, desain dimensi saluran, kolam detensi, RAB, dan RKS untuk mengatasi genangan.</p>
+<p>
+Analisis hidrologi, hidrolika, elevasi saluran, desain dimensi saluran, kolam detensi, RAB, dan RKS untuk mengatasi genangan.
+</p>
 </div>
 
 <div class="box">
+<img src="tender.jpeg">
 <h4>📊 Lomba Tender Nasional</h4>
-<p>Menyusun RAB, BOQ, AHSP, kurva S, time schedule, dokumen penawaran tender, dan koordinasi tim.</p>
+<p>
+Menyusun RAB, BOQ, AHSP, kurva S, time schedule, dokumen penawaran tender, serta koordinasi tim.
+</p>
 </div>
 
 <div class="box">
-<h4>🌉 AutoCAD Jembatan KJI 2024</h4>
-<p>Drafter desain jembatan untuk Kompetisi Jembatan Indonesia.</p>
+<img src="kbgi.jpeg">
+<h4>🌉 KBGI / KJI 2024</h4>
+<p>
+Drafter AutoCAD desain jembatan untuk Kompetisi Bangunan Gedung Indonesia dan Kompetisi Jembatan Indonesia.
+</p>
 </div>
 
 <div class="box">
-<h4>🏠 SketchUp Rumah 2 Lantai</h4>
-<p>Desain rumah 2 lantai dan perhitungan rencana anggaran biaya.</p>
+<img src="rumah 2 lantai.jpeg">
+<h4>🏠 Rumah 2 Lantai</h4>
+<p>
+Desain rumah 2 lantai menggunakan SketchUp serta penyusunan rencana anggaran biaya proyek.
+</p>
 </div>
 
 </div>
